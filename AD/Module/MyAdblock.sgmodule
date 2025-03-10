@@ -1,0 +1,66 @@
+#!name=MyAdblock
+#!desc=自用去广告
+#!category=世路如今已惯
+
+[Rule]
+#助理去广告
+URL-REGEX,^https://ilce\.alicdn\.com/minolta/.+\.(png|jpg)\?.*content=.*attrs.*value.*,REJECT
+URL-REGEX,^https://mdn\.alipayobjects\.com/ad_mgr/.*,REJECT
+URL-REGEX,^https://yaozuji\.oss-cn-hangzhou\.aliyuncs\.com/uploads/.*,REJECT
+URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/afts\/img\/A\*.*?\.(avif|webp)\?(.*&)?bz=cdp_biz(&.*|$),REJECT
+
+
+
+[Map Local]
+# > 曹操出行
+^https:\/\/ccimgs\.oss\.aliyuncs\.com\/\/advert\/picture data-type=text data="{}" status-code=200
+^https:\/\/cap\.caocaokeji\.cn\/advert-bss\/pullAdvertMaterial data-type=text data="{}" status-code=200
+^https:\/\/cap\.caocaokeji\.cn\/advert-bss\/pullAdvert data-type=text data="{}" status-code=200
+^https:\/\/cdncc-frontend\.caocaokeji\.cn\/2\/specialCarTeam\/onLine data-type=text data="{}" status-code=200
+^https:\/\/cdncc-frontend\.caocaokeji\.cn\/2\/demand-center-server\/images\/qipao\.gif data-type=text data="{}" status-code=200
+^https:\/\/ccimgs\.oss-cn-hangzhou\.aliyuncs\.com\/customer\/20230517\/64646b8d7c01910053a944ad data-type=text data="{}" status-code=200
+^https:\/\/cospimgs-cdn\.caocaokeji\.cn\/advertFile data-type=text data="{}" status-code=200
+^https:\/\/mobile\.caocaokeji\.cn\/cap\/advert-bss\/pullAdvert\/1\.0\.0 data-type=text data=" " status-code=200
+^https:\/\/cap\.caocaokeji\.cn\/bps\/msgBarAgg\/2\.0 data-type=text data="{}" status-code=200
+
+# > 翼支付 开屏广告
+^https:\/\/mapi-app\.bestpay\.com\.cn\/gapi\/appClient\/noEnc\/unionOpenAds data-type=text data=" " status-code=200
+#我的商品列表
+^https:\/\/oss\.bestpay\.cn\/gz\/mall-11\/8024_95\/mall_95 data-type=text data=" " status-code=200
+
+# > 华图在线
+^https:\/\/yyfapi\.huatu\.com\/common\/ad\/resource\/home data-type=text data="{}" status-code=200
+
+# > 学习通
+^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend data-type=text data="{}" status-code=200
+^https:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig data-type=text data="{}" status-code=200
+
+# > 小米运动
+^https:\/\/cdn\.cnbj1\.fds\.api\.mi-img\.com\/hlth-operate\/article\/user\/resource data-type=text data=" " status-code=200
+^https:\/\/img\.youpin\.mi-img\.com\/jianyu\/b952db08_f862_401f_9f22_718d47ff47e9\.jpeg data-type=text data=" " status-code=200
+^https:\/\/img\.youpin\.mi-img\.com\/jianyu\/6bc0ee03_2fe7_4e60_bc52_6062a96d8dc1\.jpeg data-type=text data=" " status-code=200
+
+# > 美团
+#充值页面
+^https:\/\/mgm\.meituan\.com\/marketing\/unLoginapi\/pgy_sdk\/ad\/batchAdExchange data-type=text data="{}" status-code=200
+
+
+# > 起航教育
+^https:\/\/mobile\.iqihang\.com\/api\/ark\/app\/v1\/dictionary\/type\/COMMOSSION data-type=text data=" " status-code=200
+^https:\/\/mobile\.iqihang\.com\/api\/ark\/app\/v1\/dictionary\/types data-type=text data=" " status-code=200
+^https:\/\/mobile\.iqihang\.com\/api\/ark\/web\/v1\/home-recommend\/info-list data-type=text data=" " status-code=200
+^https:\/\/mobile\.iqihang\.com\/api\/ark\/web\/v1\/advert\/playing\/info data-type=text data=" " status-code=200
+^https:\/\/mobile\.iqihang\.com\/api\/ark\/web\/v1\/package\/list data-type=text data="{}" status-code=200
+^https:\/\/mobile\.iqihang\.com\/api\/ark\/app\/v1\/dictionary\/type\/AGENT_ASSISTANT_SWITCH\?type=AGENT_ASSISTANT_SWITCH data-type=text data="{}" status-code=200
+
+
+# > 中国电信
+^https:\/\/appgo\.189\.cn:9200\/query\/queryTabCardAdList data-type=text data="{}" status-code=200
+^https:\/\/appgoad\.189\.cn:7021\/query\/compoundADSpace data-type=text data="{}" status-code=200
+^https:\/\/appgoad\.189\.cn:7021\/query\/getFeedTab data-type=text data="{}" status-code=200
+^https:\/\/appgoad\.189\.cn:7021\/query\/defaultSearchTermsV2 data-type=text data="{}" status-code=200
+
+
+
+[MITM]
+hostname = mapi-app.bestpay.com.cn,oss.bestpay.cn,yyfapi.huatu.com,ustatic.ulecdn.com,www.ule.com,mdn.alipayobjects.com,ilce.alicdn.com,zhuli.whxinna.com,home-yd.chaoxing.com,appgoad.189.cn,appgo.189.cn,learn.chaoxing.com,mobile.iqihang.com,image-prod.iqihang.com,guide-acs.m.taobao.com,learn.chaoxing.com,cdn.cnbj1.fds.api.mi-img.com,img.youpin.mi-img.com,mgm.meituan.com,ccimgs.oss.aliyuncs.com,cap.caocaokeji.cn,cdncc-frontend.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com,mobile.caocaokeji.cn,cospimgs-cdn.caocaokeji.cn,cap.caocaokeji.cn
