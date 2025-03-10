@@ -1,0 +1,43 @@
+#!name=联通去广告
+#!desc=联通去广告
+#!category=世路如今已惯
+
+[Map Local]
+^https:\/\/img\.client\.10010\.com\/homejingxuan11\/js\/zsyhMoren\.c17c8706\.js data-type=text data="{}" status-code=200
+#瀑布流
+^https:\/\/img\.client\.10010\.com\/homejingxuan11\/js\/pubuliu\.c2f254fc\.js data-type=text data="{}" status-code=200
+
+^https:\/\/m\.10010\.com\/homepage\/static\/js\/app\.f9a494a6f5ec528eddc8\.js data-type=text data="{}" status-code=200
+
+^https:\/\/img\.client\.10010\.com\/homejingxuan11\/js\/zsyhLianghao\.5cf3212e\.js data-type=text data="{}" status-code=200
+
+^https:\/\/img\.client\.10010\.com\/homejingxuan11\/js\/zsyhSmallMoren\.113e81e2\.js data-type=text data="{}" status-code=200
+
+^https:\/\/img\.client\.10010\.com\/homejingxuan11\/js\/zsyhRightMoren\.f098a65b\.js data-type=text data="{}" status-code=200
+
+^https:\/\/m\.client\.10010\.com\/mobileserviceNine\/api\/v1\/index\/queryIndexWaterfall data-type=text data="{}" status-code=200
+
+^https:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm data-type=text data="{}" status-code=200
+
+^https:\/\/m\.client\.10010\.com\/mobileserviceNine\/api\/v1\/index\/queryOMO data-type=text data="{}" status-code=200
+
+^https:\/\/m\.client\.10010\.com\/mobileserviceNine\/api\/v1\/index\/queryIndexExclusiveOffers data-type=text data="{}" status-code=200
+
+^https:\/\/m\.client\.10010\.com\/mobileserviceNine\/homefusion\/fuInter data-type=text data="{}" status-code=200
+
+^https:\/\/m\.10010\.com\/mall-access\/query\/waterfallFlow data-type=text data="{}" status-code=200
+
+#充话费页面
+^https:\/\/upayxx\.10010\.com\/npfwap\/NpfMob\/offerRate\/getSecondCardInfo data-type=text data="{}" status-code=200
+^https:\/\/upayxx\.10010\.com\/npfwap\/NpfMob\/banner\/configQuery\?channelType=308&bannerOrRecommand=2 data-type=text data="{}" status-code=200
+^https:\/\/upay\.10010\.com\/npfwap\/NpfMob\/banner\/configQuery data-type=text data="{}" status-code=200
+#悬浮图标
+^https:\/\/m\.client\.10010\.com\/mobileserviceNine\/api\/v1\/homeService\/getServiceHomeMarketingBits data-type=text data="{}" status-code=200
+#推荐tab
+^https:\/\/m\.client\.10010\.com\/mobileserviceNine\/api\/v1\/index\/queryIndexCfig\/076\/761 data-type=text data="{}" status-code=200
+
+
+
+
+[MITM]
+hostname = %APPEND% smartad.10010.com, img.client.10010.com, m.client.10010.com, m.10010.com,upay.10010.com,upayxx.10010.com
