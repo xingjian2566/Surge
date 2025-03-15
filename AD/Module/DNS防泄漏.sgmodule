@@ -1,6 +1,7 @@
 #!name=DNS防泄漏
 #!desc=DNS防泄漏
 #!author=非正常人类研究中心
+#!cata
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Prevent_DNS_Leaks.png
 #!keyword=坐看云起时
 #!tag=DNS
@@ -10,31 +11,31 @@
 
 [Rule]
 # DNS Leak from Shadowrocket Default
-DOMAIN-SUFFIX,dnsleaktest.com,PROXY
-DOMAIN-SUFFIX,dnsleak.com,PROXY
-DOMAIN-SUFFIX,expressvpn.com,PROXY
-DOMAIN-SUFFIX,nordvpn.com,PROXY
-DOMAIN-SUFFIX,surfshark.com,PROXY
-DOMAIN-SUFFIX,ipleak.net,PROXY
-DOMAIN-SUFFIX,perfect-privacy.com,PROXY
-DOMAIN-SUFFIX,browserleaks.com,PROXY
-DOMAIN-SUFFIX,browserleaks.org,PROXY
-DOMAIN-SUFFIX,vpnunlimited.com,PROXY
-DOMAIN-SUFFIX,whoer.net,PROXY
-DOMAIN-SUFFIX,whrq.net,PROXY
+DOMAIN-SUFFIX,dnsleaktest.com,Proxy
+DOMAIN-SUFFIX,dnsleak.com,Proxy
+DOMAIN-SUFFIX,expressvpn.com,Proxy
+DOMAIN-SUFFIX,nordvpn.com,Proxy
+DOMAIN-SUFFIX,surfshark.com,Proxy
+DOMAIN-SUFFIX,ipleak.net,Proxy
+DOMAIN-SUFFIX,perfect-privacy.com,Proxy
+DOMAIN-SUFFIX,browserleaks.com,Proxy
+DOMAIN-SUFFIX,browserleaks.org,Proxy
+DOMAIN-SUFFIX,vpnunlimited.com,Proxy
+DOMAIN-SUFFIX,whoer.net,Proxy
+DOMAIN-SUFFIX,whrq.net,Proxy
 # Astrill
-DOMAIN-SUFFIX,astrill.com,PROXY
-DOMAIN-SUFFIX,astrill.org,PROXY
-DOMAIN-SUFFIX,dnsleak.asn247.net,PROXY
+DOMAIN-SUFFIX,astrill.com,Proxy
+DOMAIN-SUFFIX,astrill.org,Proxy
+DOMAIN-SUFFIX,dnsleak.asn247.net,Proxy
 # Surfshark
-DOMAIN-SUFFIX,surfshark.com,PROXY
-DOMAIN-SUFFIX,surfsharkdns.com,PROXY
+DOMAIN-SUFFIX,surfshark.com,Proxy
+DOMAIN-SUFFIX,surfsharkdns.com,Proxy
 # Pixelscan
-DOMAIN-SUFFIX,pixelscan.net,PROXY
+DOMAIN-SUFFIX,pixelscan.net,Proxy
 # PING0
-DOMAIN,ipv4.ping0.cc,PROXY
-DOMAIN,ipv6.ping0.cc,PROXY
+DOMAIN,ipv4.ping0.cc,Proxy
+DOMAIN,ipv6.ping0.cc,Proxy
 # IPAPI.CO
-DOMAIN-SUFFIX,ipapi.co,PROXY
+DOMAIN-SUFFIX,ipapi.co,Proxy
 # BrowserScan
-DOMAIN,ip-scan.adspower.net,PROXY
+DOMAIN,ip-scan.adspower.net,Proxy
