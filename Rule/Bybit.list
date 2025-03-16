@@ -1,3 +1,4 @@
+#Bybit
 DOMAIN-SUFFIX,ffe390afd658c19dcbt707e0597b846d.de
 DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
 DOMAIN-SUFFIX,appsflyersdk.com
@@ -16,3 +17,8 @@ DOMAIN-SUFFIX,bycbe.com
 USER-AGENT,bybit_app*
 DOMAIN-SUFFIX,bymj.io
 DOMAIN-KEYWORD,bybit
+
+#欧易
+DOMAIN-SUFFIX,okex.com
+DOMAIN-SUFFIX,oklink.com
+DOMAIN-SUFFIX,okx.com
