@@ -75,6 +75,7 @@ URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca
 ^https:\/\/mobile\.iqihang\.com\/api\/ark\/web\/v1\/package\/list data-type=text data="{}" status-code=200
 ^https:\/\/mobile\.iqihang\.com\/api\/ark\/app\/v1\/dictionary\/type\/AGENT_ASSISTANT_SWITCH\?type=AGENT_ASSISTANT_SWITCH data-type=text data="{}" status-code=200
 
+# 淘宝
 
 # 中国电信
 ^https:\/\/appgo\.189\.cn:9200\/query\/queryTabCardAdList data-type=text data="{}" status-code=200
