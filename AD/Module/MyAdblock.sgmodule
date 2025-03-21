@@ -76,6 +76,7 @@ URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca
 ^https:\/\/mobile\.iqihang\.com\/api\/ark\/app\/v1\/dictionary\/type\/AGENT_ASSISTANT_SWITCH\?type=AGENT_ASSISTANT_SWITCH data-type=text data="{}" status-code=200
 
 # 淘宝
+^https:\/\/heic\.alicdn\.com\/imgextra data-type=text data="{}" status-code=200
 
 # 中国电信
 ^https:\/\/appgo\.189\.cn:9200\/query\/queryTabCardAdList data-type=text data="{}" status-code=200
@@ -88,4 +89,4 @@ URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca
 
 
 [MITM]
-hostname = mapi-app.bestpay.com.cn,oss.bestpay.cn,yyfapi.huatu.com,ustatic.ulecdn.com,www.ule.com,mdn.alipayobjects.com,ilce.alicdn.com,zhuli.whxinna.com,home-yd.chaoxing.com,appgoad.189.cn,appgo.189.cn,learn.chaoxing.com,mobile.iqihang.com,image-prod.iqihang.com,guide-acs.m.taobao.com,learn.chaoxing.com,cdn.cnbj1.fds.api.mi-img.com,img.youpin.mi-img.com,mgm.meituan.com,ccimgs.oss.aliyuncs.com,cap.caocaokeji.cn,cdncc-frontend.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com,mobile.caocaokeji.cn,cospimgs-cdn.caocaokeji.cn,cap.caocaokeji.cn,home-yd.chaoxing.com,p.ananas.chaoxing.com,cn-acs.m.cainiao.com, amdc.m.taobao.com,wap.bank.ecitic.com, imcs.citicbank.com
+hostname = mapi-app.bestpay.com.cn,oss.bestpay.cn,yyfapi.huatu.com,ustatic.ulecdn.com,www.ule.com,mdn.alipayobjects.com,ilce.alicdn.com,zhuli.whxinna.com,home-yd.chaoxing.com,appgoad.189.cn,appgo.189.cn,learn.chaoxing.com,mobile.iqihang.com,image-prod.iqihang.com,guide-acs.m.taobao.com,learn.chaoxing.com,cdn.cnbj1.fds.api.mi-img.com,img.youpin.mi-img.com,mgm.meituan.com,ccimgs.oss.aliyuncs.com,cap.caocaokeji.cn,cdncc-frontend.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com,mobile.caocaokeji.cn,cospimgs-cdn.caocaokeji.cn,cap.caocaokeji.cn,home-yd.chaoxing.com,p.ananas.chaoxing.com,cn-acs.m.cainiao.com, amdc.m.taobao.com,wap.bank.ecitic.com, imcs.citicbank.com,heic.alicdn.com
