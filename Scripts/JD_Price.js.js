@@ -8,7 +8,7 @@
  * 修改内容：添加调试日志、错误处理，移除 Promise.withResolvers 以兼容旧环境
  *
 [Script]
-京东比价 = type=http-response,pattern=^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js,timeout=60
+京东比价 = type=http-response,pattern=^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/Scripts/JD_Price.js,timeout=60
  
 [MITM]
 hostname = %APPEND% in.m.jd.com
