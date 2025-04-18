@@ -1,0 +1,26 @@
+#!name=惠生活798
+#!desc=惠生活798去广告
+#!category=世路如今已惯
+
+[Rule]
+# >惠生活798
+URL-REGEX,^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,REJECT
+URL-REGEX,^https:\/\/ifs\.tanx\.com\/display_ifs,REJECT
+
+[URL Rewrite]
+#惠生活
+^https:\/\/mdn\.alicdn\.com\/(imgextra|bao\/uploaded)\/.*\.webp - reject
+
+[Map Local]
+# > 惠生活798
+^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage data-type=text data="{}" status-code=200
+
+
+[Script]
+首页 = type=http-response, pattern=^https:\/\/i\.ilife798\.com\/api\/v1\/ui\/app\/master$, script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/Scripts/ilife.js, requires-body=true
+
+alipay_ad_block = type=http-response, pattern=^https:\/\/edgegw(-infer)?\.alipay\.com\/egw\.do, script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/Scripts/ilife.js, requires-body=true
+
+alimama_union_ads = type=http-response,pattern=^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,requires-body=true,script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/Scripts/ilife.js, requires-body=true
+[MITM]
+hostname = i.ilife798.com,acs4miniapp-inner.m.taobao.com,ifs.tanx.com,mdn.alicdn.com
