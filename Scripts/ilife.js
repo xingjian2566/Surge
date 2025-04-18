@@ -1,4 +1,11 @@
+// Surge Script (type=http-response, requires-body=true)
+
 let obj = JSON.parse($response.body);
+
+// 拦空推荐流数据（如果 result 存在且是数组）
+if (obj?.result && Array.isArray(obj.result)) {
+  obj.result = [];
+}
 
 // 移除广告数组
 if (obj?.data?.ads) {
