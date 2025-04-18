@@ -12,7 +12,6 @@ URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/afts\/img\/A\*.*?\.(avif|webp)\?(
 URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca720dd7caf8845\.png,REJECT
 
 
-
 [URL Rewrite]
 # 支付宝-菜鸟
 ^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads - reject
