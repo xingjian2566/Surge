@@ -86,7 +86,10 @@ URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca
 # 中信银行
 ^https?:\/\/wap.bank\.ecitic\.com:6443\/NMBFOServer\/cbframework\.do\?act=CUBEPAGEDATA data-type=text data=" " status-code=200
 ^https?:\/\/imcs\.citicbank\.com\/cloud\/.+(1125.+2436|1242.+2688|750.+1638|563.+1218) data-type=text data="{}" status-code=200
+# >助理生活
+^https:\/\/m5-zhuli\.whxinna\.com\/ad_manage\/get_ad_placement data-type=text data="{}" status-code=200
+
 
 
 [MITM]
-hostname = mapi-app.bestpay.com.cn,oss.bestpay.cn,yyfapi.huatu.com,ustatic.ulecdn.com,www.ule.com,mdn.alipayobjects.com,ilce.alicdn.com,zhuli.whxinna.com,home-yd.chaoxing.com,appgoad.189.cn,appgo.189.cn,learn.chaoxing.com,mobile.iqihang.com,image-prod.iqihang.com,guide-acs.m.taobao.com,learn.chaoxing.com,cdn.cnbj1.fds.api.mi-img.com,img.youpin.mi-img.com,mgm.meituan.com,ccimgs.oss.aliyuncs.com,cap.caocaokeji.cn,cdncc-frontend.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com,mobile.caocaokeji.cn,cospimgs-cdn.caocaokeji.cn,cap.caocaokeji.cn,home-yd.chaoxing.com,p.ananas.chaoxing.com,cn-acs.m.cainiao.com, amdc.m.taobao.com,wap.bank.ecitic.com, imcs.citicbank.com,heic.alicdn.com
+hostname = mapi-app.bestpay.com.cn,oss.bestpay.cn,yyfapi.huatu.com,ustatic.ulecdn.com,www.ule.com,mdn.alipayobjects.com,ilce.alicdn.com,zhuli.whxinna.com,home-yd.chaoxing.com,appgoad.189.cn,appgo.189.cn,learn.chaoxing.com,mobile.iqihang.com,image-prod.iqihang.com,guide-acs.m.taobao.com,learn.chaoxing.com,cdn.cnbj1.fds.api.mi-img.com,img.youpin.mi-img.com,mgm.meituan.com,ccimgs.oss.aliyuncs.com,cap.caocaokeji.cn,cdncc-frontend.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com,mobile.caocaokeji.cn,cospimgs-cdn.caocaokeji.cn,cap.caocaokeji.cn,home-yd.chaoxing.com,p.ananas.chaoxing.com,cn-acs.m.cainiao.com, amdc.m.taobao.com,wap.bank.ecitic.com, imcs.citicbank.com,heic.alicdn.com,m5-zhuli.whxinna.com
