@@ -52,6 +52,8 @@ URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca
 # > 华图在线
 ^https:\/\/yyfapi\.huatu\.com\/common\/ad\/resource\/home data-type=text data="{}" status-code=200
 
+# > 惠生活
+
 # > 学习通
 ^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend data-type=text data="{}" status-code=200
 ^https:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig data-type=text data="{}" status-code=200
