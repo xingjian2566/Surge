@@ -10,7 +10,8 @@ URL-REGEX,^https://yaozuji\.oss-cn-hangzhou\.aliyuncs\.com/uploads/.*,REJECT
 URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/afts\/img\/A\*.*?\.(avif|webp)\?(.*&)?bz=cdp_biz(&.*|$),REJECT
 #学习通开屏
 URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca720dd7caf8845\.png,REJECT
-#惠生活798
+
+# >惠生活798
 [Rule]
 URL-REGEX,^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,REJECT
 URL-REGEX,^https:\/\/ifs\.tanx\.com\/display_ifs,REJECT
