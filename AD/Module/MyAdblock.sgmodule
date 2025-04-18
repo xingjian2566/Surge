@@ -19,8 +19,7 @@ URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca
 ^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish - reject
 #中信银行
 ^https:\/\/imcs\.citicbank\.com\/cloud\/([a-fA-F0-9]{32})\.(jpg|png) - reject
-#惠生活
-^https:\/\/mdn\.alicdn\.com\/(imgextra|bao\/uploaded)\/.*\.webp - reject
+
 
 [Map Local]
 #菜鸟
