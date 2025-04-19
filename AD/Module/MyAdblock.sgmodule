@@ -10,7 +10,7 @@ URL-REGEX,^https://yaozuji\.oss-cn-hangzhou\.aliyuncs\.com/uploads/.*,REJECT
 URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/afts\/img\/A\*.*?\.(avif|webp)\?(.*&)?bz=cdp_biz(&.*|$),REJECT
 #学习通开屏
 URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca720dd7caf8845\.png,REJECT
-^https:\/\/p\.ananas\.chaoxing\.com\/star3\/120_120cQ50 data-type=text data="{}" status-code=200
+^https:\/\/p\.ananas\.chaoxing\.com\/star3 data-type=text data="{}" status-code=200
 
 
 
