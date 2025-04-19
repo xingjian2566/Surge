@@ -11,7 +11,7 @@ URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/afts\/img\/A\*.*?\.(avif|webp)\?(
 #学习通开屏
 URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca720dd7caf8845\.png,REJECT
 
-DOMAIN,home-yd.chaoxing.com
+URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 
 
 
