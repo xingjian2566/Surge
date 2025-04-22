@@ -28,6 +28,9 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 # i4助手
 ^https:\/\/list-app-m\.i4\.cn\/getAppListByIds\.xhtml data-type=text data="{}" status-code=200
 ^https:\/\/list-app-m\.i4\.cn\/getAppList\.xhtml data-type=text data="{}" status-code=200
+^https:\/\/list-app-m\.i4\.cn\/getthirdpartyadkeys\.xhtml data-type=text data="{}" status-code=200
+
+
 
 hostname = list-app-m.i4.cn
 
