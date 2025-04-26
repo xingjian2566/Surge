@@ -26,10 +26,7 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 
 [Map Local]
 # i4助手
-^https:\/\/list-app-m\.i4\.cn\/getAppListByIds\.xhtml data-type=text data="{}" status-code=200
-^https:\/\/list-app-m\.i4\.cn\/getAppList\.xhtml data-type=text data="{}" status-code=200
-^https:\/\/list-app-m\.i4\.cn\/getthirdpartyadkeys\.xhtml data-type=text data="{}" status-code=200
-^https:\/\/d-image\.i4\.cn\/applabel\/hotsearch\/1\.png data-type=text data="{}" status-code=200
+
 
 
 
@@ -112,4 +109,4 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 
 
 [MITM]
-hostname = mapi-app.bestpay.com.cn,oss.bestpay.cn,yyfapi.huatu.com,ustatic.ulecdn.com,www.ule.com,mdn.alipayobjects.com,ilce.alicdn.com,zhuli.whxinna.com,home-yd.chaoxing.com,appgoad.189.cn,appgo.189.cn,learn.chaoxing.com,mobile.iqihang.com,image-prod.iqihang.com,guide-acs.m.taobao.com,learn.chaoxing.com,cdn.cnbj1.fds.api.mi-img.com,img.youpin.mi-img.com,mgm.meituan.com,ccimgs.oss.aliyuncs.com,cap.caocaokeji.cn,cdncc-frontend.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com,mobile.caocaokeji.cn,cospimgs-cdn.caocaokeji.cn,cap.caocaokeji.cn,home-yd.chaoxing.com,p.ananas.chaoxing.com,cn-acs.m.cainiao.com, amdc.m.taobao.com,wap.bank.ecitic.com, imcs.citicbank.com,heic.alicdn.com,m5-zhuli.whxinna.com,m.360buyimg.com,list-app-m.i4.cn,d-image.i4.cn
+hostname = mapi-app.bestpay.com.cn,oss.bestpay.cn,yyfapi.huatu.com,ustatic.ulecdn.com,www.ule.com,mdn.alipayobjects.com,ilce.alicdn.com,zhuli.whxinna.com,home-yd.chaoxing.com,appgoad.189.cn,appgo.189.cn,learn.chaoxing.com,mobile.iqihang.com,image-prod.iqihang.com,guide-acs.m.taobao.com,learn.chaoxing.com,cdn.cnbj1.fds.api.mi-img.com,img.youpin.mi-img.com,mgm.meituan.com,ccimgs.oss.aliyuncs.com,cap.caocaokeji.cn,cdncc-frontend.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com,mobile.caocaokeji.cn,cospimgs-cdn.caocaokeji.cn,cap.caocaokeji.cn,home-yd.chaoxing.com,p.ananas.chaoxing.com,cn-acs.m.cainiao.com, amdc.m.taobao.com,wap.bank.ecitic.com, imcs.citicbank.com,heic.alicdn.com,m5-zhuli.whxinna.com,
