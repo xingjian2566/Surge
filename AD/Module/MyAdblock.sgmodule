@@ -23,10 +23,10 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 #中信银行
 ^https:\/\/imcs\.citicbank\.com\/cloud\/([a-fA-F0-9]{32})\.(jpg|png) - reject
 
+#i4助手
+^https?:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml - reject
 
 [Map Local]
-# i4助手
-
 
 
 
