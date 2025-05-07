@@ -2,27 +2,24 @@
 #!desc=移除淘宝小程序和支付宝部分广告。请自行测试，必要时调整。
 
 [MITM]
-# 脚本处理必需: Acs4miniapp-inner.m.taobao.com (HTTPS)
-hostname = %APPEND% Acs4miniapp-inner.m.taobao.com
-# 若其他HTTPS广告源需要脚本处理，也请在此处添加其主机名
+hostname = %APPEND% Acs4miniapp-inner.m.taobao.com,gw.alipayobjects.com
 
 [Rule]
-# 阿里系统计/追踪
+# 阿里系统计/追踪 (如 wgo.mmstat.com)
 DOMAIN,wgo.mmstat.com,REJECT
 
 # 支付宝广告素材 (ad_mgr)
 URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/,REJECT-TINYGIF
 
-# 阿里CDN广告素材 (ilce.alicdn.com/minolta)
-URL-REGEX,^https?:\/\/ilce\.alicdn\.com\/minolta\/\d+\/\d+\/,REJECT-TINYGIF
+# 阿里CDN广告素材 (ilce.alicdn.com 路径, 包括 minolta 和 montage)
+URL-REGEX,^https?:\/\/ilce\.alicdn\.com\/(minolta|montage)\/.+\.(png|jpg),REJECT-TINYGIF
 
-# 阿里CDN广告素材 (mdn.alicdn.com paths)
+# 阿里CDN广告素材 (mdn.alicdn.com 特定路径)
 URL-REGEX,^https?:\/\/mdn\.alicdn\.com\/(bao\/uploaded\/|imgextra\/),REJECT-TINYGIF
 
 # 淘宝小程序Alimama广告API (通过脚本处理)
-URL-REGEX,^https?:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,script:TaobaoAlimamaAds,requires-body=true,enabled=true
-# DOMAIN,Acs4miniapp-inner.m.taobao.com,REJECT # 已被上方脚本规则替代，若仍需全面屏蔽此域名其他路径可取消注释 (谨慎)
+URL-REGEX,^https?:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/AD/Scripts/ilife798.js,requires-body=true,enabled=true
 
 [Script]
-# 淘宝Alimama广告移除脚本
+# 淘宝Alimama广告移除脚本 (脚本内容见上文，确保已正确保存为 taobaoAlimamaAds.js)
 TaobaoAlimamaAds = type=response-body,pattern=^https?:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/AD/Scripts/ilife798.js,requires-body=true,timeout=10
