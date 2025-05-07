@@ -1,27 +1,28 @@
-#!name=惠生活798
-#!desc=惠生活798去广告
-#!category=世路如今已惯
+#!name=自定义去广告 (淘宝与支付宝)
+#!desc=移除淘宝小程序和支付宝部分广告。请自行测试，必要时调整。
+
+[MITM]
+# 脚本处理必需: Acs4miniapp-inner.m.taobao.com (HTTPS)
+hostname = %APPEND% Acs4miniapp-inner.m.taobao.com
+# 若其他HTTPS广告源需要脚本处理，也请在此处添加其主机名
 
 [Rule]
-# >惠生活798
-URL-REGEX,^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,REJECT
-URL-REGEX,^https:\/\/ifs\.tanx\.com\/display_ifs,REJECT
+# 阿里系统计/追踪
+DOMAIN,wgo.mmstat.com,REJECT
 
-[URL Rewrite]
-#惠生活
-^https:\/\/mdn\.alicdn\.com\/(imgextra|bao\/uploaded)\/.*\.webp - reject
+# 支付宝广告素材 (ad_mgr)
+URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/,REJECT-TINYGIF
 
-[Map Local]
-# > 惠生活798
-^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage data-type=text data="{}" status-code=200
-^https:\/\/mdn\.alicdn\.com\/bao\/(imgextra|bao\/uploaded)\/.* data-type=text data="{}" status-code=200
+# 阿里CDN广告素材 (ilce.alicdn.com/minolta)
+URL-REGEX,^https?:\/\/ilce\.alicdn\.com\/minolta\/\d+\/\d+\/,REJECT-TINYGIF
 
+# 阿里CDN广告素材 (mdn.alicdn.com paths)
+URL-REGEX,^https?:\/\/mdn\.alicdn\.com\/(bao\/uploaded\/|imgextra\/),REJECT-TINYGIF
+
+# 淘宝小程序Alimama广告API (通过脚本处理)
+URL-REGEX,^https?:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,script:TaobaoAlimamaAds,requires-body=true,enabled=true
+# DOMAIN,Acs4miniapp-inner.m.taobao.com,REJECT # 已被上方脚本规则替代，若仍需全面屏蔽此域名其他路径可取消注释 (谨慎)
 
 [Script]
-首页 = type=http-response, pattern=^https:\/\/i\.ilife798\.com\/api\/v1\/ui\/app\/master$, script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/Scripts/ilife.js, requires-body=true
-
-alipay_ad_block = type=http-response, pattern=^https:\/\/edgegw(-infer)?\.alipay\.com\/egw\.do, script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/Scripts/ilife.js, requires-body=true
-
-alimama_union_ads = type=http-response,pattern=^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,requires-body=true,script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/Scripts/ilife.js, requires-body=true
-[MITM]
-hostname = i.ilife798.com,acs4miniapp-inner.m.taobao.com,ifs.tanx.com,mdn.alicdn.com
+# 淘宝Alimama广告移除脚本
+TaobaoAlimamaAds = type=response-body,pattern=^https?:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/AD/Scripts/ilife798.js,requires-body=true,timeout=10
