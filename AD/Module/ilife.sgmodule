@@ -1,12 +1,14 @@
 #!name=自定义去广告 (淘宝与支付宝)
 #!desc=移除淘宝小程序和支付宝部分广告。请自行测试，必要时调整。
-
-[MITM]
-hostname = %APPEND% Acs4miniapp-inner.m.taobao.com,gw.alipayobjects.com
+#!category= 111
 
 [Rule]
 # 阿里系统计/追踪 (如 wgo.mmstat.com)
 DOMAIN,wgo.mmstat.com,REJECT
+DOMAIN,acs4miniapp-inner.m.taobao.com,REJECT
+DOMAIN,mtop.alimama.abyss.unionpage.get,REJECT
+DOMAIN,kzycdn.hnkzy.com,REJECT
+DOMAIN,ilce.alicdn.com,REJECT
 
 # 支付宝广告素材 (ad_mgr)
 URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/,REJECT-TINYGIF
@@ -17,9 +19,16 @@ URL-REGEX,^https?:\/\/ilce\.alicdn\.com\/(minolta|montage)\/.+\.(png|jpg),REJECT
 # 阿里CDN广告素材 (mdn.alicdn.com 特定路径)
 URL-REGEX,^https?:\/\/mdn\.alicdn\.com\/(bao\/uploaded\/|imgextra\/),REJECT-TINYGIF
 
-# 淘宝小程序Alimama广告API (通过脚本处理)
-URL-REGEX,^https?:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/AD/Scripts/ilife798.js,requires-body=true,enabled=true
+
+[Map Local]
+^https:\/\/ifs\.tanx\.com\/display_ifs data-type=text data="{}" status-code=200
+
+^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [Script]
-# 淘宝Alimama广告移除脚本 (脚本内容见上文，确保已正确保存为 taobaoAlimamaAds.js)
-TaobaoAlimamaAds = type=response-body,pattern=^https?:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/AD/Scripts/ilife798.js,requires-body=true,timeout=10
+# 淘宝Alimama广告移除脚本)
+TaobaoAlimamaAds = type=http-response,pattern=^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/AD/Scripts/ilife798.js,requires-body=true
+
+
+[MITM]
+hostname = %APPEND% acs4miniapp-inner.m.taobao.com,gw.alipayobjects.com,ifs.tanx.com
