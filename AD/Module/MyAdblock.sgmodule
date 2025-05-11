@@ -26,9 +26,12 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 #i4助手
 ^https?:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml - reject
 
+# 农业银行去开屏广告(需卸载重装)
+^https?:\/\/midc\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download\/(ed64|74b5) - reject
+
+
+
 [Map Local]
-
-
 
 #菜鸟
 # 首页 好物推荐,商品推广,底部标签页,快递详情页,问卷调查,主页图标
@@ -109,4 +112,4 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 
 
 [MITM]
-hostname = mapi-app.bestpay.com.cn,oss.bestpay.cn,yyfapi.huatu.com,ustatic.ulecdn.com,www.ule.com,mdn.alipayobjects.com,ilce.alicdn.com,zhuli.whxinna.com,home-yd.chaoxing.com,appgoad.189.cn,appgo.189.cn,learn.chaoxing.com,mobile.iqihang.com,image-prod.iqihang.com,guide-acs.m.taobao.com,learn.chaoxing.com,cdn.cnbj1.fds.api.mi-img.com,img.youpin.mi-img.com,mgm.meituan.com,ccimgs.oss.aliyuncs.com,cap.caocaokeji.cn,cdncc-frontend.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com,mobile.caocaokeji.cn,cospimgs-cdn.caocaokeji.cn,cap.caocaokeji.cn,home-yd.chaoxing.com,p.ananas.chaoxing.com,cn-acs.m.cainiao.com, amdc.m.taobao.com,wap.bank.ecitic.com, imcs.citicbank.com,heic.alicdn.com,m5-zhuli.whxinna.com,list-app-m.i4.cn
+hostname = mapi-app.bestpay.com.cn,oss.bestpay.cn,yyfapi.huatu.com,ustatic.ulecdn.com,www.ule.com,mdn.alipayobjects.com,ilce.alicdn.com,zhuli.whxinna.com,home-yd.chaoxing.com,appgoad.189.cn,appgo.189.cn,learn.chaoxing.com,mobile.iqihang.com,image-prod.iqihang.com,guide-acs.m.taobao.com,learn.chaoxing.com,cdn.cnbj1.fds.api.mi-img.com,img.youpin.mi-img.com,mgm.meituan.com,ccimgs.oss.aliyuncs.com,cap.caocaokeji.cn,cdncc-frontend.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com,mobile.caocaokeji.cn,cospimgs-cdn.caocaokeji.cn,cap.caocaokeji.cn,home-yd.chaoxing.com,p.ananas.chaoxing.com,cn-acs.m.cainiao.com, amdc.m.taobao.com,wap.bank.ecitic.com, imcs.citicbank.com,heic.alicdn.com,m5-zhuli.whxinna.com,list-app-m.i4.cn,midc.cdn-static.abchina.com.cn
