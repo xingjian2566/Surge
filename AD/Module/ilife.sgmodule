@@ -1,6 +1,6 @@
-#!name=慧生活679
-#!desc=移除淘宝小程序和支付宝部分广告。请自行测试，必要时调整。
-#!category= 111
+#!name=慧生活798
+#!desc=移除慧生活798小程序广告
+#!category= 世路如今已惯
 
 [Map Local]
 ^https:\/\/mdap\.alipay\.com\/loggw\/tinyapp\/queryConfig\.do data-type=text data="{}" status-code=200 header="Content-Type:application/json"
