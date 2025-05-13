@@ -33,15 +33,6 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 
 [Map Local]
 
-
-^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbopen\.miniapp\.recommend\.cpc\.cn data-type=text data="{}" status-code=200
-^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.(acquire|event|close)\.cn data-type=text data="{}" status-code=200
-^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(homepage\.merge|tabbar\.marketing)\.get\.cn data-type=text data="{}" status-code=200
-# 发现页 数字角标 裹裹券
-^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cnactivitycenter data-type=text data="{}" status-code=200
-^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cncreditmarket\.hit\.getactivityhit\.cn data-type=text data="{}" status-code=200
-^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.longquan\.place\.getpageresourcecontent\.cn data-type=text data="{}" status-code=200
-
 # > 曹操出行
 ^https:\/\/ccimgs\.oss\.aliyuncs\.com\/\/advert\/picture data-type=text data="{}" status-code=200
 ^https:\/\/cap\.caocaokeji\.cn\/advert-bss\/pullAdvertMaterial data-type=text data="{}" status-code=200
@@ -72,6 +63,10 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 ^https:\/\/home-yd\.chaoxing\.com\/apis\/banner\/getConfigInfoForClient data-type=text data="{}" status-code=200
 ^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca720dd7caf8845\.png data-type=text data="{}" status-code=200 
 ^https:\/\/p\.ananas\.chaoxing\.com\/star3 data-type=text data="{}" status-code=200
+
+#洗衣机
+^https:\/\/api\.zhishustar\.com\/\/zhishuPlanetAdPlatform\/api\/pluginVideoADQuery data-type=text data="{}" status-code=200
+^https:\/\/yshz-user\.haier-ioc\.com\/slot\/get data-type=text data="{}" status-code=200
 
 
 # > 小米运动
