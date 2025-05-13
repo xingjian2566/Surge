@@ -2,27 +2,6 @@
 #!desc=移除淘宝小程序和支付宝部分广告。请自行测试，必要时调整。
 #!category= 111
 
-^https:\/\/mdap\.alipay\.com\/loggw\/tinyapp\/queryConfig\.do data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/mdap\.alipay\.com\/loggw\/dwcookieLogGet\.do data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/gw\.alipayobjects\.com\/os\/tscentermng\/.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/g\.alicdn\.com\/trace\/trace\/.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/g\.alicdn\.com\/alilog\/\?\?.*aplus_.*\.js.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/i\.ilife798\.com\/api\/v1\/fs\/dl data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/A*iBVGT5j44vcAAAAAAAAAAAAAAUd1AQ\?bz=mobileaix_model&tid=afts_traceId data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/ilce\.alicdn\.com\/minolta\/.*\.png$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^http:\/\/mdn\.alipayobjects\.com\/ad_mgr data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 
 
