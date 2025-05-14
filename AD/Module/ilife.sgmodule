@@ -31,6 +31,9 @@
 
 ^https:\/\/tracking\.intl\.miui\.com\/track\/key_get data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
+^https:\/\/.*\.alipayobjects\.com\/prod\/.*\.png data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/.*\.alipayobjects\.com\/.*\.json data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/.*\.alicdn\.com\/.*(aplus_|trace|monitor|plugin).*\.js.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 
 
