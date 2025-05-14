@@ -21,7 +21,7 @@
 
 ^https:\/\/ilce\.alicdn\.com\/minolta\/.*\.png$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get data-type=text data="{\"data\":{\"result\":[]}}" status-code=200 header="Content-Type:application/json"
 
 ^http:\/\/mdn\.alipayobjects\.com\/ad_mgr data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
