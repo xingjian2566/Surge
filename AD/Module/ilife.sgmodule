@@ -25,6 +25,12 @@
 
 ^http:\/\/mdn\.alipayobjects\.com\/ad_mgr data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
+^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/gw\.alipayobjects\.com\/os\/tscentermng\/aFXNrZTbmrPRsQFXvShx data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/tracking\.intl\.miui\.com\/track\/key_get data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
 
 
 
