@@ -35,13 +35,9 @@
 ^https:\/\/.*\.alipayobjects\.com\/.*\.json data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 ^https:\/\/.*\.alicdn\.com\/.*(aplus_|trace|monitor|plugin).*\.js.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
+^https:\/\/mdn\.alipayobjects\.com\/yaoyy_2021004168620075\/afts\/file data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-[Map Local]
-^https:\/\/mdn\.alipayobjects\.com\/yaoyy_2021004168620075\/afts\/file\/A\*yNuyQ7QYeUkAAAAAAAAAAAAADoh3AQ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-[MITM]
-hostname = %APPEND% 
 
 
 [MITM]
-hostname = %APPEND% mdap.alipay.com, g.alicdn.com, gw.alipayobjects.com, mdn.alipayobjects.com, wgo.mmstat.com, ilce.alicdn.com, mdn.alipayobjects.com, acs4miniapp-inner.m.taobao.com, i.ilife798.com, video-sh.cloudvideocdn.taobao.com, heic.alicdn.com, cdn.ynuf.aliapp.org, gw.alipayobjects.com, tracking.intl.miui.com, 
+hostname = %APPEND% mdap.alipay.com, g.alicdn.com, gw.alipayobjects.com, mdn.alipayobjects.com, wgo.mmstat.com, ilce.alicdn.com, acs4miniapp-inner.m.taobao.com, i.ilife798.com, video-sh.cloudvideocdn.taobao.com, heic.alicdn.com, cdn.ynuf.aliapp.org, gw.alipayobjects.com, tracking.intl.miui.com, 
