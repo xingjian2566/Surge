@@ -36,7 +36,7 @@
 ^https:\/\/.*\.alicdn\.com\/.*(aplus_|trace|monitor|plugin).*\.js.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js\?v3 data-type=text data="// blocked by surge, ad code removed" status-code=200 header="Content-Type:application/javascript"
-
+^http:\/\/cyqy\.gzjinglang\.com\/h5\/call_product\/sendTuiAInfo data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 
 [MITM]
