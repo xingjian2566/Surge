@@ -37,7 +37,7 @@
 
 ^https:\/\/mdn\.alipayobjects\.com\/yaoyy_2021004168620075\/afts\/file data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/2021004168620075\/1\/mp\/.* data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 
 [MITM]
