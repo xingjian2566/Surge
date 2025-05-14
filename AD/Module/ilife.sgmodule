@@ -35,4 +35,4 @@
 
 
 [MITM]
-hostname = %APPEND% mdap.alipay.com, g.alicdn.com, gw.alipayobjects.com, mdn.alipayobjects.com, wgo.mmstat.com, ilce.alicdn.com, mdn.alipayobjects.com, acs4miniapp-inner.m.taobao.com, i.ilife798.com, video-sh.cloudvideocdn.taobao.com, heic.alicdn.com
+hostname = %APPEND% mdap.alipay.com, g.alicdn.com, gw.alipayobjects.com, mdn.alipayobjects.com, wgo.mmstat.com, ilce.alicdn.com, mdn.alipayobjects.com, acs4miniapp-inner.m.taobao.com, i.ilife798.com, video-sh.cloudvideocdn.taobao.com, heic.alicdn.com, cdn.ynuf.aliapp.org, gw.alipayobjects.com, tracking.intl.miui.com
