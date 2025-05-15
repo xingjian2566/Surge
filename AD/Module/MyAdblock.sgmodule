@@ -64,10 +64,6 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 ^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca720dd7caf8845\.png data-type=text data="{}" status-code=200 
 ^https:\/\/p\.ananas\.chaoxing\.com\/star3 data-type=text data="{}" status-code=200
 
-#洗衣机
-^https:\/\/api\.zhishustar\.com\/\/zhishuPlanetAdPlatform\/api\/pluginVideoADQuery data-type=text data="{}" status-code=200
-^https:\/\/yshz-user\.haier-ioc\.com\/slot\/get data-type=text data="{}" status-code=200
-
 
 # > 小米运动
 ^https:\/\/cdn\.cnbj1\.fds\.api\.mi-img\.com\/hlth-operate\/article\/user\/resource data-type=text data=" " status-code=200
