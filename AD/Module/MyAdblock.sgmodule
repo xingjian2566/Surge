@@ -55,7 +55,8 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 # > 华图在线
 ^https:\/\/yyfapi\.huatu\.com\/common\/ad\/resource\/home data-type=text data="{}" status-code=200
 
-
+# > OhCar
+^https:\/\/app-chelaila\.52python\.cn\/chelaila\/comm-route\/v1\/page_ads\/post data-type=text data="{}" status-code=200
 
 # > 学习通
 ^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend data-type=text data="{}" status-code=200
