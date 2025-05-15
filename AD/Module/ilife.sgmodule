@@ -42,6 +42,7 @@
 
 ^https:\/\/mdn\.alipayobjects\.com\/yaoyy_2021005138667161\/afts\/file data-type=text data="{}" status-code=200
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_1miy7h\/afts\/img data-type=text data="{}" status-code=200
+^https:\/\/gw\.alipayobjects\.com\/os\/mobiletms data-type=text data="{}" status-code=200
 
 
 
