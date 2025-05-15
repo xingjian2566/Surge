@@ -19,4 +19,4 @@
 
 
 
-hostname = %APPEND% api.bckid.com.cn, yshz-user.haier-ioc.com, api.zhishustar.com,yshz-user.haier-ioc.com,
+hostname = %APPEND% api.bckid.com.cn, yshz-user.haier-ioc.com, api.zhishustar.com, 
