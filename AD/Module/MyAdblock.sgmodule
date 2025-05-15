@@ -59,18 +59,6 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 #我的商品列表
 ^https:\/\/oss\.bestpay\.cn\/gz\/mall-11\/8024_95\/mall_95 data-type=text data=" " status-code=200
 
-            # >>>>>> X <<<<<< #
-# > 学习通
-^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend data-type=text data="{}" status-code=200
-^https:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig data-type=text data="{}" status-code=200
-^https:\/\/home-yd\.chaoxing\.com\/apis\/banner\/getConfigInfoForClient data-type=text data="{}" status-code=200
-^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca720dd7caf8845\.png data-type=text data="{}" status-code=200 
-^https:\/\/p\.ananas\.chaoxing\.com\/star3 data-type=text data="{}" status-code=200
-
-# > 小米运动
-^https:\/\/cdn\.cnbj1\.fds\.api\.mi-img\.com\/hlth-operate\/article\/user\/resource data-type=text data=" " status-code=200
-^https:\/\/img\.youpin\.mi-img\.com\/jianyu\/b952db08_f862_401f_9f22_718d47ff47e9\.jpeg data-type=text data=" " status-code=200
-^https:\/\/img\.youpin\.mi-img\.com\/jianyu\/6bc0ee03_2fe7_4e60_bc52_6062a96d8dc1\.jpeg data-type=text data=" " status-code=200
 
             # >>>>>> M <<<<<< #
 # > 美团
@@ -90,6 +78,21 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 ^https:\/\/mobile\.iqihang\.com\/api\/ark\/web\/v1\/advert\/playing\/info data-type=text data=" " status-code=200
 ^https:\/\/mobile\.iqihang\.com\/api\/ark\/web\/v1\/package\/list data-type=text data="{}" status-code=200
 ^https:\/\/mobile\.iqihang\.com\/api\/ark\/app\/v1\/dictionary\/type\/AGENT_ASSISTANT_SWITCH\?type=AGENT_ASSISTANT_SWITCH data-type=text data="{}" status-code=200
+
+
+            # >>>>>> X <<<<<< #
+# > 学习通
+^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend data-type=text data="{}" status-code=200
+^https:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig data-type=text data="{}" status-code=200
+^https:\/\/home-yd\.chaoxing\.com\/apis\/banner\/getConfigInfoForClient data-type=text data="{}" status-code=200
+^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca720dd7caf8845\.png data-type=text data="{}" status-code=200 
+^https:\/\/p\.ananas\.chaoxing\.com\/star3 data-type=text data="{}" status-code=200
+
+# > 小米运动
+^https:\/\/cdn\.cnbj1\.fds\.api\.mi-img\.com\/hlth-operate\/article\/user\/resource data-type=text data=" " status-code=200
+^https:\/\/img\.youpin\.mi-img\.com\/jianyu\/b952db08_f862_401f_9f22_718d47ff47e9\.jpeg data-type=text data=" " status-code=200
+^https:\/\/img\.youpin\.mi-img\.com\/jianyu\/6bc0ee03_2fe7_4e60_bc52_6062a96d8dc1\.jpeg data-type=text data=" " status-code=200
+
 
             # >>>>>> Z <<<<<< #
 
