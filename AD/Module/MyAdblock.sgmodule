@@ -44,6 +44,11 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 ^https:\/\/mobile\.caocaokeji\.cn\/cap\/advert-bss\/pullAdvert\/1\.0\.0 data-type=text data=" " status-code=200
 ^https:\/\/cap\.caocaokeji\.cn\/bps\/msgBarAgg\/2\.0 data-type=text data="{}" status-code=200
 
+            # >>>>>> H <<<<<< #
+# > 华图在线
+^https:\/\/yyfapi\.huatu\.com\/common\/ad\/resource\/home data-type=text data="{}" status-code=200
+
+
             # >>>>>> J <<<<<< #
 # > 京东
 ^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs data-type=text data=" " status-code=200
@@ -53,14 +58,6 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 ^https:\/\/mapi-app\.bestpay\.com\.cn\/gapi\/appClient\/noEnc\/unionOpenAds data-type=text data=" " status-code=200
 #我的商品列表
 ^https:\/\/oss\.bestpay\.cn\/gz\/mall-11\/8024_95\/mall_95 data-type=text data=" " status-code=200
-
-            # >>>>>> H <<<<<< #
-# > 华图在线
-^https:\/\/yyfapi\.huatu\.com\/common\/ad\/resource\/home data-type=text data="{}" status-code=200
-
-            # >>>>>> O <<<<<< #
-# > OhCar
-^https:\/\/app-chelaila\.52python\.cn\/chelaila\/comm-route\/v1\/page_ads\/post data-type=text data="{}" status-code=200
 
             # >>>>>> X <<<<<< #
 # > 学习通
@@ -79,6 +76,11 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 # > 美团
 #充值页面
 ^https:\/\/mgm\.meituan\.com\/marketing\/unLoginapi\/pgy_sdk\/ad\/batchAdExchange data-type=text data="{}" status-code=200
+
+           # >>>>>> O <<<<<< #
+# > OhCar
+^https:\/\/app-chelaila\.52python\.cn\/chelaila\/comm-route\/v1\/page_ads\/post data-type=text data="{}" status-code=200
+
 
             # >>>>>> Q <<<<<< #
 # > 起航教育
