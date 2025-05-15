@@ -16,4 +16,4 @@
 
 
 
-hostname = api.bckid.com.cn
+hostname = %APPEND% api.bckid.com.cn
