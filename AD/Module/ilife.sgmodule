@@ -2,7 +2,7 @@
 #!desc=移除慧生活798小程序广告
 #!category= 世路如今已惯
 
-[]
+[URL REJECT]
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js url reject-dict
 
 [Map Local]
