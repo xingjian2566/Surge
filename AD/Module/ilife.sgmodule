@@ -3,7 +3,7 @@
 #!category= 世路如今已惯
 
 [URL REWRITE]
-^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js url reject-dict
+^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js url reject
 
 [Map Local]
 ^https:\/\/mdap\.alipay\.com\/loggw\/tinyapp\/queryConfig\.do data-type=text data="{}" status-code=200 header="Content-Type:application/json"
