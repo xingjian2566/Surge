@@ -2,8 +2,9 @@
 #!desc=移除慧生活798小程序广告
 #!category= 世路如今已惯
 
-https://www.grammarly.com/ai/ai-writing-tools/paragraph-rewriter
+[URL REWRITE]
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js url reject
+
 
 [Map Local]
 ^https:\/\/g\.alicdn\.com\/trace\/trace\/.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
