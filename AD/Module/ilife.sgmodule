@@ -46,6 +46,10 @@
 
 ^https:\/\/gw\.alipayobjects\.com\/os\/mobiletms data-type=text data="{}" status-code=200
 
+^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js url reject-dict
+
+
+
 
 
 [MITM]
