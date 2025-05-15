@@ -12,8 +12,11 @@
 ^https:\/\/api\.bckid\.com\.cn\/operation\/front\/cms\/productSearchKey\/list data-type=text data="{}" status-code=200
 
 
+            # >>>>>> H <<<<<< #
+#海尔洗衣机
+^https:\/\/api\.zhishustar\.com\/\/zhishuPlanetAdPlatform\/api\/pluginVideoADQuery data-type=text data="{}" status-code=200
+^https:\/\/yshz-user\.haier-ioc\.com\/slot\/get data-type=text data="{}" status-code=200
 
 
 
-
-hostname = %APPEND% api.bckid.com.cn
+hostname = %APPEND% api.bckid.com.cn,
