@@ -1,1 +1,19 @@
-#
+#!name=微信小程序
+#!desc=移除微信程序广告
+#!category= 世路如今已惯
+
+[Scrpit]
+            # >>>>>> B <<<<<< #
+#BabyCare
+^https:\/\/api\.bckid\.com\.cn\/search\/front\/product\/search\/productSearch data-type=text data="{}" status-code=200
+
+^https:\/\/api\.bckid\.com\.cn\/common\/front\/user\/dialogs\/getDialogs data-type=text data="{}" status-code=200
+
+^https:\/\/api\.bckid\.com\.cn\/operation\/front\/cms\/productSearchKey\/list data-type=text data="{}" status-code=200
+
+
+
+
+
+
+hostname = api.bckid.com.cn
