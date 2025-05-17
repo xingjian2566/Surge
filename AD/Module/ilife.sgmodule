@@ -9,7 +9,7 @@
 [Map Local]
 ^https:\/\/g\.alicdn\.com\/trace\/trace\/.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 ^https:\/\/ilce\.alicdn\.com\/minolta\/.*\.png$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^https:\/\/.*\.alicdn\.com\/.*(aplus_|trace|monitor|plugin).*\.js.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/.*\.alicdn\.com\/.*(aplus_|trace|monitor).*\.js.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 ^https:\/\/mdap\.alipay\.com\/loggw\/.*\.do data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
