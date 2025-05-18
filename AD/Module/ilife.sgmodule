@@ -18,8 +18,6 @@
 ^http:\/\/mdn\.alipayobjects\.com\/ad_mgr.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 ^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-#^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_.*\/afts\/img.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 ^https:\/\/.*\.alipayobjects\.com\/(prod\/.*\.png|.*\.json)$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
