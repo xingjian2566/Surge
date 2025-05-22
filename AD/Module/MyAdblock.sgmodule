@@ -53,6 +53,9 @@ URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 # > 京东
 ^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs data-type=text data=" " status-code=200
 
+#建行生活 
+http-response ^https:\/\/yunbusiness\.ccb\.com\/clp_service|basic_service\/txCtrl\?txcode= script-path=jhsh.js, requires-body=true, timeout=20, tag=建行生活.js
+
 
             # >>>>>> M <<<<<< #
 # > 美团
