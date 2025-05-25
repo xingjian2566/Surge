@@ -13,6 +13,9 @@ URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca
 
 URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 
+#
+URL-REGEX,^http:\/\/static\.xczim\.com\/[a-f0-9\-]+\.(jpg|jpeg|png|webp)?$,REJECT
+
 
 
 [URL Rewrite]
