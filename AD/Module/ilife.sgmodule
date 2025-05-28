@@ -4,7 +4,7 @@
 
 
 [RULE]
-DOMAIN-SUFFIX,mdn.alipayobjects.com
+DOMAIN-SUFFIX,mdn.alipayobjects.com,REJECT
 
 [URL REWRITE]
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js url reject
