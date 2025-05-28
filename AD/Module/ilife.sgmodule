@@ -4,7 +4,6 @@
 
 
 [RULE]
-DOMAIN-SUFFIX,mdn.alipayobjects.com,REJECT
 URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/.*\/images\/partner\/TB1fQqBc6BADuNk6XUYXXa\.SXXa,REJECT
 
 URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/20\d{11,}\/1\/mp ,REJECT
@@ -23,12 +22,15 @@ URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/20\d{11,}\
 
 [Map Local]
 
-[Map Local]
 # 支付宝对象服务 JS、资源、配置等
 ^https:\/\/gw\.alipayobjects\.com\/os\/(tscentermng\/.*|mobiletms.*)$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/A*iBVGT5j44vcAAAAAAAAAAAAAAUd1AQ\?bz=mobileaix_model&tid=afts_traceId$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 ^http:\/\/mdn\.alipayobjects\.com\/ad_mgr.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 ^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+# 拦截 mdn.alipayobjects.com 下所有 ccdn 广告资源
+^https:\/\/mdn\.alipayobjects\.com\/ccdn\/.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
 
 # 图片资源请求统一空内容
 ^https:\/\/.*\.alipayobjects\.com\/(prod\/.*\.png|.*\.json)$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
