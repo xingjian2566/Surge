@@ -11,7 +11,7 @@ URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/20\d{11,}\
 
 [URL REWRITE]
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js url reject
-[URL Rewrite]
+
 # 拦截广告图片和资源（alipayobjects）
 ^https:\/\/mdn\.alipayobjects\.com\/.*\/(partner|file)\/.*(\.jpg|\.png|@).*  reject
 
