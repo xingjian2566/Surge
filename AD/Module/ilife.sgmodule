@@ -29,7 +29,7 @@ URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/20\d{11,}\
 ^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 # 拦截 mdn.alipayobjects.com 下所有 ccdn 广告资源
-^https:\/\/mdn\.alipayobjects\.com\/ccdn\/.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+^https:\/\/mdn\.alipayobjects\.com\/.*\.(js|json|html|png|jpg|jpeg|svg|gif|css)(\?.*)?$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 
 # 图片资源请求统一空内容
