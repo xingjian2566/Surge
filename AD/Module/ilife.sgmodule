@@ -2,10 +2,12 @@
 #!desc=移除慧生活798小程序广告
 #!category= 世路如今已惯
 
+
+[RULE]
 [URL REWRITE]
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js url reject
 
-DOMAIN-SUFFIX,mdn.alipayobjects.com
+
 URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/.*\/images\/partner\/TB1fQqBc6BADuNk6XUYXXa\.SXXa
 URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/20\d{11,}\/1\/mp\/
 
