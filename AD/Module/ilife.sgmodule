@@ -4,9 +4,10 @@
 
 
 [RULE]
+DOMAIN-SUFFIX,mdn.alipayobjects.com
+
 [URL REWRITE]
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js url reject
-
 
 URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/.*\/images\/partner\/TB1fQqBc6BADuNk6XUYXXa\.SXXa
 URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/20\d{11,}\/1\/mp\/
