@@ -5,12 +5,13 @@
 
 [RULE]
 DOMAIN-SUFFIX,mdn.alipayobjects.com,REJECT
+URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/.*\/images\/partner\/TB1fQqBc6BADuNk6XUYXXa\.SXXa,REJECT
+
+URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/20\d{11,}\/1\/mp\/
 
 [URL REWRITE]
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js url reject
 
-URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/.*\/images\/partner\/TB1fQqBc6BADuNk6XUYXXa\.SXXa
-URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/20\d{11,}\/1\/mp\/
 
 [Map Local]
 ^https:\/\/g\.alicdn\.com\/trace\/trace\/.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
