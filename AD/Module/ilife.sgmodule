@@ -22,25 +22,32 @@ URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/20\d{11,}\
 ^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp  reject
 
 [Map Local]
-^https:\/\/g\.alicdn\.com\/trace\/trace\/.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^https:\/\/ilce\.alicdn\.com\/minolta\/.*\.png$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^https:\/\/.*\.alicdn\.com\/.*(aplus_|trace|monitor).*\.js.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/mdap\.alipay\.com\/loggw\/.*\.do data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+[Map Local]
+# 支付宝对象服务 JS、资源、配置等
+^https:\/\/gw\.alipayobjects\.com\/os\/(tscentermng\/.*|mobiletms.*)$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/A*iBVGT5j44vcAAAAAAAAAAAAAAUd1AQ\?bz=mobileaix_model&tid=afts_traceId$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+^http:\/\/mdn\.alipayobjects\.com\/ad_mgr.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-^https:\/\/gw\.alipayobjects\.com\/os\/(tscentermng\/.*|mobiletms.*)$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/A*iBVGT5j44vcAAAAAAAAAAAAAAUd1AQ\?bz=mobileaix_model&tid=afts_traceId data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^http:\/\/mdn\.alipayobjects\.com\/ad_mgr.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# 图片资源请求统一空内容
+^https:\/\/.*\.alipayobjects\.com\/(prod\/.*\.png|.*\.json)$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-^https:\/\/.*\.alipayobjects\.com\/(prod\/.*\.png|.*\.json)$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# 慧生活（ilife798）下载接口
+^https:\/\/i\.ilife798\.com\/api\/v1\/fs\/dl$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-^https:\/\/i\.ilife798\.com\/api\/v1\/fs\/dl data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get data-type=text data="{\"data\":{\"result\":[]}}" status-code=200 header="Content-Type:application/json"
-^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^https:\/\/tracking\.intl\.miui\.com\/track\/key_get data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^https:\/\/222\.141\.5\.112\/afts\/file data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# 阿里妈妈广告推荐接口（返回合法结构）
+^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get$ data-type=text data="{\"data\":{\"result\":[]}}" status-code=200 header="Content-Type: application/json"
+
+# 阿里 CDN 广告资源
+^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+# UC 广告打点
+^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+# 可疑 IP 直链资源
+^https:\/\/222\.141\.5\.112\/afts\/file$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
 
             # >>>>>> S <<<<<< #
 # 收钱吧
