@@ -11,7 +11,15 @@ URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/20\d{11,}\
 
 [URL REWRITE]
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js url reject
+[URL Rewrite]
+# 拦截广告图片和资源（alipayobjects）
+^https:\/\/mdn\.alipayobjects\.com\/.*\/(partner|file)\/.*(\.jpg|\.png|@).*  reject
 
+# 拦截淘宝广告请求（内容流广告）
+^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get\/1\.0  reject
+
+# 拦截埋点统计请求（mmstat）
+^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp  reject
 
 [Map Local]
 ^https:\/\/g\.alicdn\.com\/trace\/trace\/.*$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
