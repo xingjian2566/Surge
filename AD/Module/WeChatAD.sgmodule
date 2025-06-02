@@ -17,7 +17,7 @@
 ^https:\/\/api\.zhishustar\.com\/\/zhishuPlanetAdPlatform\/api\/pluginVideoADQuery data-type=text data="{}" status-code=200
 ^https:\/\/yshz-user\.haier-ioc\.com\/slot\/get data-type=text data="{}" status-code=200
 ^https:\/\/api\.zhishustar\.com\/\/zhishuPlanetAdPlatform\/api\/pluginVideoADQuery data-type=text data="{}" status-code=200
-
+^https:\/\/api\.zhishustar\.com\/\/zhishuPlanetAdPlatform\/api\/ad\/exposure data-type=text data="{}" status-code=200
 
 
 [MITM]
