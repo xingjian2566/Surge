@@ -2,7 +2,7 @@
 #!desc=移除微信程序广告
 #!category= 世路如今已惯
 
-[Scrpit]
+[Map Local]
             # >>>>>> B <<<<<< #
 #BabyCare
 ^https:\/\/api\.bckid\.com\.cn\/search\/front\/product\/search\/productSearch data-type=text data="{}" status-code=200
@@ -20,7 +20,6 @@
 
 ^https:\/\/api\.zhishustar\.com\/\/zhishuPlanetAdPlatform\/api\/ad\/exposure data-type=text data="{}" status-code=200
 
-^https:\/\/yshz-user\.haier-ioc\.com\/slot\/get$ script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/AD/Scripts/haier.js, requires-body=true, tag=海尔悬浮球广告屏蔽
 
 
 
