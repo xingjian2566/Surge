@@ -21,7 +21,7 @@
 ^https:\/\/api\.zhishustar\.com\/\/zhishuPlanetAdPlatform\/api\/ad\/exposure data-type=text data="{}" status-code=200
 
 [Script]
-^https:\/\/yshz-user\.haier-ioc\.com\/slot\/get$ script-path=https://gist.githubusercontent.com/xingjianbuxi000/a018c68a453bff2e2ff55eeee6c37282/raw/empty-ad.js, requires-body=true, tag=海尔悬浮球广告屏蔽
+^https:\/\/yshz-user\.haier-ioc\.com\/slot\/get$ script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/AD/Scripts/haier.js, requires-body=true, tag=海尔悬浮球广告屏蔽
 
 [MITM]
 hostname = %APPEND% yshz-user.haier-ioc.com
