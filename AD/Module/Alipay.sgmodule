@@ -11,6 +11,8 @@
 
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/.*\?bz=mobileaix_model data-type=file data="{}"
 
+^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\/original url reject-img
+
 
 
 [MITM]
