@@ -26,7 +26,7 @@
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\/original data-type=tiny-gif status-code=200
 
 # ad_mgr 广告图（覆盖你提供的全部链接）
-^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/[a-zA-Z0-9]+ data-type=tiny-gif status-code=200
+^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 # 通用 bz 参数广告资源（高命中）
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch) data-type=tiny-gif status-code=200
