@@ -4,7 +4,8 @@
 
 [URL Rewrite]
 # Alipay CDN 类似广告文件路径
-^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/\d+\/\d+\/mp\/ - reject
+# 只拒绝特定后缀，如图片、非 js/json 文件
+^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/\d+\/\d+\/mp\/.*\.(png|jpg|jpeg|webp|gif)(\?.*)?$ - reject
 
 
 
