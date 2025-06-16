@@ -13,6 +13,8 @@
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\/original data-type=tiny-gif status-code=200
 
 
+^https:\/\/gw\.alipayobjects\.com\/mdn\/rms_[^\/]+\/afts\/img\/.* data-type=tiny-gif status-code=200
+
 
 
 [MITM]
