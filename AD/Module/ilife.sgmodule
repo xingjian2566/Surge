@@ -14,3 +14,38 @@
 ^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/\d+\/\d+\/mp\/ - reject
 
 
+
+[Map Local]
+# GlobalSearch 推荐广告图
+^https:\/\/mdn\.alipayobjects\.com\/afts\/img\/.*\?bz=GlobalSearch data-type=tiny-gif status-code=200
+
+# huamei 原生广告图
+^https:\/\/mdn\.alipayobjects\.com\/huamei_[a-z0-9]+\/afts\/img\/.*\.(webp|avif)(\.ahp\d)?\.webp data-type=tiny-gif status-code=200
+
+# gw.alipayobjects.com 配置注入干扰
+^https:\/\/gw\.alipayobjects\.com\/os\/(tscentermng\/.*|mobiletms.*)$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+# mdn.alipayobjects.com 广告文件
+^http:\/\/mdn\.alipayobjects\.com\/ad_mgr.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+# yaoyy 子路径广告配置
+^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+# mobileaix 模型配置
+^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/A*iBVGT5j44vcAAAAAAAAAAAAAAUd1AQ\?bz=mobileaix_model&tid=afts_traceId$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+# 阿里妈妈广告推荐接口（返回合法结构）
+^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get$ data-type=text data="{\"data\":{\"result\":[]}}" status-code=200 header="Content-Type: application/json"
+
+# 慧生活下载广告接口
+^https:\/\/i\.ilife798\.com\/api\/v1\/fs\/dl$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+# 阿里 CDN 广告资源
+^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+# UC 广告打点
+^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+# 可疑 IP 广告直链
+^https:\/\/222\.141\.5\.112\/afts\/file$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
