@@ -6,7 +6,7 @@
 #收钱吧
 ^https:\/\/images\.wosaimg\.com\/b4\/de3b0a42db1cdf1ba1d4c15cac06dd\.png data-type=text data="{}" status-code=200
 
-# BeeVideo_Poster
+# bz参数
 
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion) data-type=tiny-gif status-code=200
 
