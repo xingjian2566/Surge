@@ -9,6 +9,7 @@
 # BeeVideo_Poster
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/img\/.*\?bz=BeeVideo_Poster data-type=tiny-gif status-code=200
 
+^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/.*\?bz=mobileaix_model data-type=file data="{}"
 
 
 
