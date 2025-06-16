@@ -25,4 +25,4 @@
 
 
 [MITM]
-hostname = images.wosaimg.com,mdn.alipayobjects.com, gw.alipayobjects.com,
+hostname = images.wosaimg.com,mdn.alipayobjects.com, gw.alipayobjects.com,com, images.wosaimg.com
