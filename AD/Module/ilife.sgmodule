@@ -58,8 +58,5 @@
 ^http:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 [MITM]
-hostname = %APPEND% mdap.alipay.com, g.alicdn.com, gw.alipayobjects.com, mdn.alipayobjects.com
-
-[MITM]
 hostname = %APPEND% gw.alipayobjects.com,mdn.alipayobjects.com,wgo.mmstat.com,
 acs4miniapp-inner.m.taobao.com,i.ilife798.com,cdn.ynuf.aliapp.org,222.141.5.112
