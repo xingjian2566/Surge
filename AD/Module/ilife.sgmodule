@@ -5,34 +5,37 @@
 [URL Rewrite]
 # 广告脚本
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js - reject
+
 # 淘宝广告接口（内容流广告）
 ^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get\/1\.0 - reject
-# 埋点统计打点请求
+
+# UC 埋点统计打点请求
 ^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp - reject
-# 支付宝 CDN 广告资源（新版精准匹配）
+
+# 支付宝 CDN 广告资源（精准匹配）
 ^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/\d+\/\d+\/mp\/ - reject
 
 [Map Local]
-# Alipay GlobalSearch 推荐广告图
+# GlobalSearch 推荐广告图
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/img\/.*\?bz=GlobalSearch data-type=tiny-gif status-code=200
 
-# Alipay huamei 原生广告图
+# huamei 原生广告图
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[a-z0-9]+\/afts\/img\/.*\.(webp|avif)(\.ahp\d)?\.webp data-type=tiny-gif status-code=200
 
 # huamei 图（original 后缀）
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\/original data-type=tiny-gif status-code=200
 
-# ad_mgr 广告资源
+# ad_mgr 广告图（覆盖你提供的全部链接）
 ^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/[a-zA-Z0-9]+ data-type=tiny-gif status-code=200
 
-# 通用带 bz 参数的广告资源
+# 通用 bz 参数广告资源（高命中）
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch) data-type=tiny-gif status-code=200
 
 # gw.alipayobjects.com 配置注入干扰
 ^https:\/\/gw\.alipayobjects\.com\/os\/(tscentermng\/.*|mobiletms.*)$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-# mdn.alipayobjects.com 广告文件（原始 ad_mgr）
-^http:\/\/mdn\.alipayobjects\.com\/ad_mgr.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+# ad_mgr 广告配置统一兜底
+^http:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 # yaoyy 子路径广告配置
 ^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
@@ -49,14 +52,11 @@
 # 阿里 CDN 广告资源
 ^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-# UC 广告打点（兜底处理）
+# UC 广告打点兜底
 ^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 # 可疑 IP 广告直链
 ^https:\/\/222\.141\.5\.112\/afts\/file$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-^http:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
-
 [MITM]
-hostname = %APPEND% gw.alipayobjects.com,mdn.alipayobjects.com,wgo.mmstat.com,
-acs4miniapp-inner.m.taobao.com,i.ilife798.com,cdn.ynuf.aliapp.org,222.141.5.112
+hostname = %APPEND% gw.alipayobjects.com,mdn.alipayobjects.com,wgo.mmstat.com,acs4miniapp-inner.m.taobao.com,i.ilife798.com,cdn.ynuf.aliapp.org,222.141.5.112
