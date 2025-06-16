@@ -7,8 +7,8 @@
 ^https:\/\/images\.wosaimg\.com\/b4\/de3b0a42db1cdf1ba1d4c15cac06dd\.png data-type=text data="{}" status-code=200
 
 # BeeVideo_Poster
-^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz) data-type=tiny-gif status-code=200
 
+^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion) data-type=tiny-gif status-code=200
 
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\/original data-type=tiny-gif status-code=200
 
