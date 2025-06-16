@@ -55,6 +55,8 @@
 # 可疑 IP 广告直链
 ^https:\/\/222\.141\.5\.112\/afts\/file$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
+^http:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
 [MITM]
 hostname = %APPEND% mdap.alipay.com, g.alicdn.com, gw.alipayobjects.com, mdn.alipayobjects.com
 
