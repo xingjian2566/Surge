@@ -25,7 +25,7 @@
 # huamei 图（original 后缀）
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\/original data-type=tiny-gif status-code=200
 
-# ad_mgr 广告图（覆盖你提供的全部链接）
+# ad_mgr 广告图（统一覆盖）
 ^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 # 通用 bz 参数广告资源（高命中）
@@ -34,16 +34,13 @@
 # gw.alipayobjects.com 配置注入干扰
 ^https:\/\/gw\.alipayobjects\.com\/os\/(tscentermng\/.*|mobiletms.*)$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-# ad_mgr 广告配置统一兜底
-^http:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
-
 # yaoyy 子路径广告配置
 ^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-# mobileaix 模型配置
+# mobileaix 模型配置资源
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/A*iBVGT5j44vcAAAAAAAAAAAAAAUd1AQ\?bz=mobileaix_model&tid=afts_traceId$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-# 阿里妈妈广告推荐接口（返回合法结构）
+# 阿里妈妈广告推荐接口（返回空数据结构）
 ^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get$ data-type=text data="{\"data\":{\"result\":[]}}" status-code=200 header="Content-Type: application/json"
 
 # 慧生活下载广告接口
@@ -52,7 +49,7 @@
 # 阿里 CDN 广告资源
 ^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-# UC 广告打点兜底
+# UC 广告打点兜底（与 URL Rewrite 配合，防止漏拦截）
 ^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 # 可疑 IP 广告直链
