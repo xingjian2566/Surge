@@ -4,6 +4,7 @@
 
 [RULE]
 DOMAIN,guide-acs.m.taobao.com,REJECT
+
 [URL Rewrite]
 # 广告脚本
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js - reject
