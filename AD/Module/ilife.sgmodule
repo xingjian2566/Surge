@@ -2,6 +2,8 @@
 #!desc=移除慧生活798小程序广告
 #!category=世路如今已惯
 
+[RULE]
+DO
 [URL Rewrite]
 # 广告脚本
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js - reject
