@@ -30,6 +30,7 @@ DOMAIN,guide-acs.m.taobao.com,REJECT
 ^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/A*iBVGT5j44vcAAAAAAAAAAAAAAUd1AQ\?bz=mobileaix_model&tid=afts_traceId$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
 ^https:\/\/222\.141\.5\.112\/afts\/file$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 # gw.alipayobjects.com 配置干扰清除
