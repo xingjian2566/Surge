@@ -1,52 +1,53 @@
 #!name=慧生活798
 #!desc=移除慧生活798小程序广告
-#!category=世路如今已惯
+#!category=111
 
 [RULE]
 DOMAIN,guide-acs.m.taobao.com,REJECT
+DOMAIN-SUFFIX,acs4miniapp-inner.m.taobao.com,REJECT
+DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 
 [URL Rewrite]
-# 广告脚本 & 请求接口拦截
+# 广告脚本、广告接口、统计上报
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js - reject
-
-^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get\/1\.0 - reject
-
-^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp - reject
-
-# 支付宝 CDN 广告资源（精准匹配）
-^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/\d+\/\d+\/mp\/ - reject
+^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get(?:\/1\.0)?$ - reject
+^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ - reject
+https://i.ilife798.com/api/v1/fs/dl* reject
+^https:\/\/mdn\.alipayobjects\.com\/afts\/img\/.+\.(?:avif\.ahp2\.webp|webp|avif)(\?.*bz=BeeLottiePlayer) reject
+^https:\/\/123\.6\.7\.250\/afts\/file\/A\*.*\?bz=apmmodelmanager&tid=afts_traceId reject
 
 [Map Local]
-# GlobalSearch 推荐图、通用广告图（含 bz 参数）、huamei 原生图统一处理
-^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch) data-type=tiny-gif status-code=200
+# 阿里妈妈广告推荐接口（返回空结构）
+^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get.*$ data-type=text data="{\"data\":{\"result\":[]}}" status-code=200 header="Content-Type: application/json"
 
-^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\.(webp|avif)(\.ahp\d)?\.webp data-type=tiny-gif status-code=200
-
-^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\/original data-type=tiny-gif status-code=200
-
-# 广告配置资源清空（ad_mgr / yaoyy / mobileaix / IP直链等）
+# 淘宝广告图、原生广告、全局广告、埋点、下载广告、内容流广告图
+^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/.*\?bz=Common data-type=text data="{}" status-code=200
+^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/.*\?bz=apmmodelmanager data-type=tiny-gif status-code=200
+^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch|ucdpTemplate|BirdNest@QUICKPAY@.*) data-type=tiny-gif status-code=200
+^https:\/\/mdn\.alipayobjects\.com\/huamei_[a-z0-9]+\/afts\/img\/.*\.(webp|avif)(\.ahp\d)?\.webp$ data-type=tiny-gif status-code=200
+^https:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/[a-zA-Z0-9]+ data-type=tiny-gif status-code=200
 ^https:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
-
 ^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
-
+^https:\/\/mdn\.alipayobjects\.com\/rms_[a-z0-9]+\/afts\/img\/.*$ data-type=tiny-gif status-code=200
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/A*iBVGT5j44vcAAAAAAAAAAAAAAUd1AQ\?bz=mobileaix_model&tid=afts_traceId$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-^https:\/\/222\.141\.5\.112\/afts\/file$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+# 慧生活下载广告接口
+^https:\/\/i\.ilife798\.com\/api\/v1\/fs\/dl$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-# gw.alipayobjects.com 配置干扰清除
+# 支付宝收银台广告图
+^https:\/\/gw\.alipayobjects\.com\/os\/finxbff\/lolita\/.+\/lottie-with-images\.zip data-type=tiny-gif status-code=200
+
+# 支付宝配置干扰内容（空内容兜底）
 ^https:\/\/gw\.alipayobjects\.com\/os\/(tscentermng\/.*|mobiletms.*)$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-# 淘宝广告接口返回空数据结构（补拦）
-^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get$ data-type=text data="{\"data\":{\"result\":[]}}" status-code=200 header="Content-Type: application/json"
-
-# 慧生活下载广告
-^https:\/\/i\.ilife798\.com\/api\/v1\/fs\/dl$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+# UC 广告打点兜底
+^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 # 阿里 CDN 广告资源
 ^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-# UC 广告打点兜底
-^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+# 可疑 IP 广告直链
+^https:\/\/222\.141\.5\.112\/afts\/file$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 [MITM]
 hostname = %APPEND% gw.alipayobjects.com,mdn.alipayobjects.com,wgo.mmstat.com,acs4miniapp-inner.m.taobao.com,i.ilife798.com,cdn.ynuf.aliapp.org,222.141.5.112
