@@ -52,8 +52,7 @@ https://i.ilife798.com/api/v1/fs/dl* reject
 # 阿里 CDN 广告资源
 ^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
-# 可疑 IP 广告直链
-^https:\/\/222\.141\.5\.112\/afts\/file$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
 
 [MITM]
 hostname = %APPEND% gw.alipayobjects.com,mdn.alipayobjects.com,wgo.mmstat.com,acs4miniapp-inner.m.taobao.com,i.ilife798.com,cdn.ynuf.aliapp.org,222.141.5.112
