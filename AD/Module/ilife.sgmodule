@@ -24,7 +24,8 @@ https://i.ilife798.com/api/v1/fs/dl* reject
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\.(webp|avif)(\.ahp\d)?\.webp data-type=tiny-gif status-code=200
 
 # 可疑 IP 广告直链（扩大范围以匹配更多路径）
-^https:\/\/222\.141\.5\.112\/.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+^https:\/\/222\.141\.5\.112\/.*\/afts\/file.*$ data-type=tiny-gif status-code=200
+
 ^https:\/\/221\.15\.68\.93\/.*\/afts\/file.*$ data-type=tiny-gif status-code=200
 
 # 淘宝广告图、原生广告、全局广告、埋点、下载广告、内容流广告图
