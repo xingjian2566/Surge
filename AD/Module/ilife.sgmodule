@@ -10,11 +10,16 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 [URL Rewrite]
 # 广告脚本、广告接口、统计上报
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js - reject
+
 ^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get(?:\/1\.0)?$ - reject
+
 ^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ - reject
 https://i.ilife798.com/api/v1/fs/dl* reject
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/img\/.+\.(?:avif\.ahp2\.webp|webp|avif)(\?.*bz=BeeLottiePlayer) reject
+
 ^https:\/\/123\.6\.7\.250\/afts\/file\/A\*.*\?bz=apmmodelmanager&tid=afts_traceId reject
+
+^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch|ucdpTemplate|BirdNest@QUICKPAY@.*) - reject
 
 [Map Local]
 # 阿里妈妈广告推荐接口（返回空结构）
