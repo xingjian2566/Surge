@@ -40,7 +40,6 @@ https://i.ilife798.com/api/v1/fs/dl* reject
 
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[a-z0-9]+\/afts\/img\/.*\.(webp|avif)(\.ahp\d)?\.webp$ data-type=tiny-gif status-code=200
 
-^https:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/[a-zA-Z0-9]+ data-type=tiny-gif status-code=200
 
 ^https:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
