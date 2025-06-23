@@ -23,6 +23,8 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch|ucdpTemplate|BirdNest@QUICKPAY@.*) - reject
 
+^https:\/\/mdn\.alipayobjects\.com\/rms_[a-z0-9]+\/afts\/img\/.*$ - reject
+
 [Map Local]
 # 阿里妈妈广告推荐接口（返回空结构）
 ^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get.*$ data-type=text data="{\"data\":{\"result\":[]}}" status-code=200 header="Content-Type: application/json"
