@@ -52,13 +52,13 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 ^https:\/\/gw\.alipayobjects\.com\/os\/finxbff\/lolita\/.+\/lottie-with-images\.zip data-type=tiny-gif status-code=200
 
 # 支付宝配置干扰内容（空内容兜底）
-^https:\/\/gw\.alipayobjects\.com\/os\/(tscentermng\/.*|mobiletms.*)$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+^https:\/\/gw\.alipayobjects\.com\/os\/(tscentermng\/.*|mobiletms.*)$ data-type=text data="{}" status-code=200
 
 # UC 广告打点兜底
-^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ data-type=text data="{}" status-code=200
 
 # 阿里 CDN 广告资源
-^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi$ data-type=text data="{}" status-code=200
 
 
 
