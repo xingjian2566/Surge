@@ -62,4 +62,4 @@ https://i.ilife798.com/api/v1/fs/dl* reject
 
 
 [MITM]
-hostname = %APPEND% gw.alipayobjects.com,mdn.alipayobjects.com,wgo.mmstat.com,acs4miniapp-inner.m.taobao.com,i.ilife798.com,cdn.ynuf.aliapp.org,222.141.5.112
+hostname = %APPEND% gw.alipayobjects.com,mdn.alipayobjects.com,wgo.mmstat.com,acs4miniapp-inner.m.taobao.com,i.ilife798.com,cdn.ynuf.aliapp.org
