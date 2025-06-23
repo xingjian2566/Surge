@@ -25,6 +25,7 @@ https://i.ilife798.com/api/v1/fs/dl* reject
 # 阿里妈妈广告推荐接口（返回空结构）
 ^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get.*$ data-type=text data="{\"data\":{\"result\":[]}}" status-code=200 header="Content-Type: application/json"
 
+#^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch|ucdpTemplate|BirdNest@QUICKPAY@.*) data-type=tiny-gif status-code=200
 
 # 可疑 IP 广告直链（扩大范围以匹配更多路径）
 ^https:\/\/222\.141\.5\.112\/.*\/afts\/file.*$ data-type=tiny-gif status-code=200
@@ -33,8 +34,6 @@ https://i.ilife798.com/api/v1/fs/dl* reject
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/.*\?bz=Common data-type=text data="{}" status-code=200
 
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/.*\?bz=apmmodelmanager data-type=tiny-gif status-code=200
-
-^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch|ucdpTemplate|BirdNest@QUICKPAY@.*) data-type=tiny-gif status-code=200
 
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[a-z0-9]+\/afts\/img\/.*\.(webp|avif)(\.ahp\d)?\.webp$ data-type=tiny-gif status-code=200
 
