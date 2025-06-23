@@ -45,7 +45,6 @@ https://i.ilife798.com/api/v1/fs/dl* reject
 ^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 ^https:\/\/mdn\.alipayobjects\.com\/rms_[a-z0-9]+\/afts\/img\/.*$ data-type=tiny-gif status-code=200
-^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/A*iBVGT5j44vcAAAAAAAAAAAAAAUd1AQ\?bz=mobileaix_model&tid=afts_traceId$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
 
 # 慧生活下载广告接口
 ^https:\/\/i\.ilife798\.com\/api\/v1\/fs\/dl$ data-type=text data="{}" status-code=200 header="Content-Type: application/json"
