@@ -2,7 +2,7 @@
 #!desc=移除慧生活798小程序广告
 #!category=111
 
-[RULE]
+[Rule]
 DOMAIN,guide-acs.m.taobao.com,REJECT
 DOMAIN-SUFFIX,acs4miniapp-inner.m.taobao.com,REJECT
 DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
@@ -10,28 +10,18 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 [URL Rewrite]
 # 广告脚本、广告接口、统计上报
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js - reject
-
 ^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get(?:\/1\.0)?$ - reject
-
 ^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ - reject
-
-^https://i.ilife798.com/api/v1/fs/dl* reject
-
-^https:\/\/mdn\.alipayobjects\.com\/afts\/img\/.+\.(?:avif\.ahp2\.webp|webp|avif)(\?.*bz=BeeLottiePlayer) reject
-
-^https:\/\/123\.6\.7\.250\/afts\/file\/A\*.*\?bz=apmmodelmanager&tid=afts_traceId reject
-
+^https://i.ilife798.com/api/v1/fs/dl* - reject
+^https:\/\/mdn\.alipayobjects\.com\/afts\/img\/.+\.(?:avif\.ahp2\.webp|webp|avif)(\?.*bz=BeeLottiePlayer) - reject
+^https:\/\/123\.6\.7\.250\/afts\/file\/A\*.*\?bz=apmmodelmanager&tid=afts_traceId - reject
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch|ucdpTemplate|BirdNest@QUICKPAY@.*) - reject
-
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\/original$ - reject
-
-^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ reject
+^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ - reject
 
 [Map Local]
 # 阿里妈妈广告推荐接口（返回空结构）
 ^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get.*$ data-type=text data="{\"data\":{\"result\":[]}}" status-code=200 header="Content-Type: application/json"
-
-#^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch|ucdpTemplate|BirdNest@QUICKPAY@.*) data-type=tiny-gif status-code=200
 
 # 屏蔽 ccdn 广告资源文件（包括 diff/动画）
 ^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/.*$ data-type=tiny-gif status-code=200
@@ -58,13 +48,8 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 # 支付宝配置干扰内容（空内容兜底）
 ^https:\/\/gw\.alipayobjects\.com\/os\/(tscentermng\/.*|mobiletms.*)$ data-type=text data="{}" status-code=200
 
-# UC 广告打点兜底
-^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ data-type=text data="{}" status-code=200
-
 # 阿里 CDN 广告资源
 ^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi$ data-type=text data="{}" status-code=200
 
-
-
 [MITM]
-hostname = %APPEND% gw.alipayobjects.com,mdn.alipayobjects.com,wgo.mmstat.com,acs4miniapp-inner.m.taobao.com,i.ilife798.com,cdn.ynuf.aliapp.org
+hostname = %APPEND% gw.alipayobjects.com, mdn.alipayobjects.com, wgo.mmstat.com, acs4miniapp-inner.m.taobao.com, i.ilife798.com, cdn.ynuf.aliapp.org
