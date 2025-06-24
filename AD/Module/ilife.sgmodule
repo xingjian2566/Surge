@@ -25,6 +25,7 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\/original$ - reject
 
+^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ reject
 
 [Map Local]
 # 阿里妈妈广告推荐接口（返回空结构）
