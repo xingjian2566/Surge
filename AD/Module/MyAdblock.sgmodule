@@ -32,6 +32,9 @@ URL-REGEX,^http:\/\/static\.xczim\.com\/[a-f0-9\-]+\.(jpg|jpeg|png|webp)?$,REJEC
 # 农业银行去开屏广告(需卸载重装)
 ^https?:\/\/midc\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download\/(ed64|74b5) - reject
 
+#曹操出行
+^https://mobile\.caocaokeji\.cn/cap/cmall-core/home/1\.0$ - reject
+^https://cap\.caocaokeji\.cn/security-center/querySecTipsResource/2\.0$ - reject
 
 
 [Map Local]
