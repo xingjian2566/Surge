@@ -29,7 +29,5 @@
 # Alipay huamei 系列原生广告图
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[a-z0-9]+\/afts\/img\/.*\.(webp|avif)(\.ahp\d)?\.webp data-type=tiny-gif status-code=200
 
-^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/\d+\/\d+\/mp\/.*\.(png|jpg|jpeg|webp|gif)(\?.*)?$ data-type=tiny-gif status-code=200
-
 [MITM]
 hostname = images.wosaimg.com,mdn.alipayobjects.com, gw.alipayobjects.com, images.wosaimg.com, 
