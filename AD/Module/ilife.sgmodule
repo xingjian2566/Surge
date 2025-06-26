@@ -28,6 +28,9 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 # 屏蔽 ccdn 广告资源文件（包括 diff/动画）
 ^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/.*$ data-type=tiny-gif status-code=200
 
+[Map Local]
+^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200
+
 # 可疑 IP 广告直链（扩大范围以匹配更多路径）
 ^https:\/\/222\.141\.5\.112\/.*\/afts\/file.*$ data-type=tiny-gif status-code=200
 
