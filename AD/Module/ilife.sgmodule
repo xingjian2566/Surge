@@ -11,6 +11,8 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 # 广告脚本、广告接口、统计上报
 ^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ reject
 
+^https?:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/\d+\/1\/mp\/[\d.]+@[^/]*$ reject
+
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js - reject
 ^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get(?:\/1\.0)?$ - reject
 ^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ - reject
