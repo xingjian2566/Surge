@@ -3,7 +3,7 @@
 #!category=世路如今已惯
 
 [Rule]
-DOMAIN-SUFFIX,klwg.klcw.net.cn,RENECT
+DOMAIN-SUFFIX,klwg.klcw.net.cn,REJECT
 #助理去广告
 URL-REGEX,^https://ilce\.alicdn\.com/minolta/.+\.(png|jpg)\?.*content=.*attrs.*value.*,REJECT
 URL-REGEX,^https://mdn\.alipayobjects\.com/ad_mgr/.*,REJECT
