@@ -73,6 +73,11 @@ URL-REGEX,^http:\/\/static\.xczim\.com\/[a-f0-9\-]+\.(jpg|jpeg|png|webp)?$,REJEC
 ^https:\/\/app\.vkbrother\.com\/app\/home\/floorInfoList data-type=text data="{}" status-code=200
 
 
+^https:\/\/klwg\.klcw\.net\.cn\/r url reject-dict
+
+hostname = klwg.klcw.net.cn
+
+
 # >建行生活 
 http-response ^https:\/\/yunbusiness\.ccb\.com\/clp_service|basic_service\/txCtrl\?txcode= script-path=https://raw.githubusercontent.com/xingjian2566/Surge/main/AD/Scripts/jhsh.js, requires-body=true, timeout=20, tag=建行生活.js
 
