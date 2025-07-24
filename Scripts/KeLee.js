@@ -1,15 +1,17 @@
-let pluginURL = decodeURIComponent($request.url.match(/plugin=(.+)/)[1]);
+// KeLee.js
+let pluginURL = $request.url.match(/plugin=(.+)/)[1];
 let fileName = pluginURL.split('/').pop().replace('.lpx', '');
+let category = "世路如今已惯";
 
-let encodedCategory = "%25E4%25B8%2596%25E8%25B7%25AF%25E5%25A6%2582%25E4%25BB%258A%25E5%25B7%25B2%25E6%2583%25AF";
-
-let rawURL = `http://script.hub/file/_start_/${pluginURL}/_end_/${fileName}.sgmodule` +
-             `?type=loon-plugin&target=surge-module&del=true&jqEnabled=true` +
-             `&category=${encodedCategory}`;
+let rawURL = http://script.hub/file/_start_/${pluginURL}/_end_/${fileName}.sgmodule +
+             ?type=loon-plugin&target=surge-module&del=true&jqEnabled=true +
+             &category=${category};
 
 let finalURL = 'surge:///install-module?url=' + encodeURIComponent(rawURL) + '&name=';
 
 $done({
-  status: 302,
-  headers: { Location: finalURL }
+  response: {
+    status: 302,
+    headers: { Location: finalURL }
+  }
 });
