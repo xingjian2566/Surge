@@ -1,0 +1,54 @@
+#!name=11
+#!desc=local
+#!category=111
+
+[Map Local]
+^https:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl data-type=text data="{}" status-code=200
+
+^https:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl data-type=text data="{}" status-code=200
+
+# 电信
+^https:\/\/appgoad\.189\.cn:7021\/query\/compoundADSpace data-type=text data="{}" status-code=200
+
+^https:\/\/appgoad\.189\.cn:7021\/query\/defaultSearchTermsV2 data-type=text data="{}" status-code=200
+
+^https:\/\/appgoad\.189\.cn:7021\/query\/queryMyRingtoneAndLifeCard data-type=text data="{}" status-code=200
+
+^https:\/\/appgoad\.189\.cn:7021\/query\/getFeedList data-type=text data="{}" status-code=200
+
+^https:\/\/appgoad\.189\.cn:7021\/query\/getFeedTab data-type=text data="{}" status-code=200
+
+^https:\/\/appgoad\.189\.cn:7021\/query\/rechargeCenterCommonADFloor data-type=text data="{}" status-code=200
+
+^https:\/\/appgoad\.189\.cn:7021\/query\/selectionCard data-type=text data="{}" status-code=200
+
+^https:\/\/appgoad\.189\.cn:7021\/query\/myLiveCard data-type=text data="{}" status-code=200
+
+^https:\/\/appgopro\.189\.cn:443\/query\/queryTabCardAdList data-type=text data="{}" status-code=200
+
+^https:\/\/appgoad\.189\.cn:7021\/query\/queryRechargePageTabADSpace data-type=text data="{}" status-code=200
+
+^https:\/\/appgoad\.189\.cn:7021\/query\/rechargeCenterCommonADFloor data-type=text data="{}" status-code=200
+
+^https:\/\/appgoad\.189\.cn:7021\/query\/queryInquiryProcessingRecommendFloor data-type=text data="{}" status-code=200
+
+
+^https:\/\/xbk\.189\.cn\/luntanSafe\/life\/bigDataTabVideo\.do data-type=text data="{}" status-code=200
+
+^https:\/\/xbk\.189\.cn\/luntanSafe\/life\/getDoubleFeed\.do data-type=text data="{}" status-code=200
+
+^https:\/\/xbk\.189\.cn\/luntanSafe\/life\/bigDataAd\.do data-type=text data="{}" status-code=200
+
+^https:\/\/xbk\.189\.cn\/luntanSafe\/life\/bigDataRecommondVideo\.do data-type=text data="{}" status-code=200
+
+^https:\/\/xbk\.189\.cn\/luntanSafe\/life\/recommendBigVWithLive\.do data-type=text data="{}" status-code=200
+
+
+^https:\/\/m\.imusic\.cn\/vapi\/vue_video_ring_diy\/cyf_adv data-type=text data="{}" status-code=200
+
+
+
+
+[MITM]
+hostname = %APPEND% yunbusiness.ccb.com, xbk.189.cn, m.imusic.cn,appgoad.189.cn,
+
