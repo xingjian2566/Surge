@@ -1,8 +1,13 @@
-// Surge 脚本：全局拦截 https://u.jd.com/xxx 并跳转京东 App
-let match = $request.url.match(/^https:\/\/u\.jd\.com\/([A-Za-z0-9_-]+)/);
-if (match) {
-  let code = match[1];
-  
+// 通用单跳短链处理
+let url = $request.url;
+let match = url.match(/^https:\/\/([^/]+)\/([A-Za-z0-9_-]+)/);
+let host = match[1];
+let code = match[2];
+
+let scheme = '';
+
+if (host === 'u.jd.com') {
+  // 京东
   let payload = {
     category: "jump",
     des: "m",
@@ -12,19 +17,40 @@ if (match) {
     M_sourceFrom: "h5auto",
     msf_type: "auto"
   };
-  
   let encoded = encodeURIComponent(JSON.stringify(payload));
-  let redirectUrl = `openApp.jdMobile://virtual?params=${encoded}`;
-  
-  // 输出 302 重定向，保证 App 内外都能直接跳
-  $done({
-    response: {
-      status: 302,
-      headers: {
-        Location: redirectUrl
-      }
-    }
-  });
-} else {
+  scheme = `openApp.jdMobile://virtual?params=${encoded}`;
+} else if (host === 'b23.tv') {
+  // B站
+  scheme = `bilibili://video/${code}`;
+}
+
+if (!scheme) {
   $done({});
 }
+
+let html = `
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>正在打开应用</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+setTimeout(function(){
+  location.href = "${scheme}";
+}, 200);
+</script>
+</head>
+<body>
+<p style="text-align:center;margin-top:50px;">正在打开应用，请稍候...</p>
+</body>
+</html>
+`;
+
+$done({
+  response: {
+    status: 200,
+    headers: { "Content-Type": "text/html; charset=UTF-8" },
+    body: html
+  }
+});
