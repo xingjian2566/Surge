@@ -100,6 +100,8 @@ http-response ^https:\/\/yunbusiness\.ccb\.com\/clp_service|basic_service\/txCtr
 ^https:\/\/mobile\.iqihang\.com\/api\/ark\/web\/v1\/package\/list data-type=text data="{}" status-code=200
 ^https:\/\/mobile\.iqihang\.com\/api\/ark\/app\/v1\/dictionary\/type\/AGENT_ASSISTANT_SWITCH\?type=AGENT_ASSISTANT_SWITCH data-type=text data="{}" status-code=200
 
+            # >>>>>> W <<<<<< #
+^https:\/\/app3\.jegotrip\.com\.cn\/api\/(assembly\/v1\/(findByPageCode|query(DataSources|ExtendDataSources))|destination\/v1\/(destination\/getDestinationById|rec\/columnListByRegion|queryGlobalStrategyData)|layout\/v1\/(guessLike\/(guessLikeTab|guessLikeTabData)|init\/destinationModel)|config\/v1\/key\/query)$ data-type=text data="{}" status-code=200
 
             # >>>>>> X <<<<<< #
 # > 学习通
