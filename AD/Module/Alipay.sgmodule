@@ -4,8 +4,12 @@
 
 [URL Rewrite]
 # Alipay CDN 类似广告文件路径
-# 只拒绝特定后缀，如图片、非 js/json 文件
 
+# 屏蔽 Alipay mobileaix_model 广告
+^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/.*\?bz=mobileaix_model - reject
+
+# 屏蔽 Alipay 预下载广告/追踪
+^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/\d+\/\d+\/\d+\/mp\/.*@.*x-predl-task - reject
 
 
 
