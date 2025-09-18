@@ -13,6 +13,9 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 
 ^https?:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/\d+\/1\/mp\/[\d.]+@[^/]*$ reject
 
+^https?:\/\/ilce\.alicdn\.com\/montage\/.+\?[^ - reject
+
+
 ^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js - reject
 ^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get(?:\/1\.0)?$ - reject
 ^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ - reject
