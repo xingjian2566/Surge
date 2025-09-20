@@ -67,18 +67,6 @@ URL-REGEX,^http:\/\/static\.xczim\.com\/[a-f0-9\-]+\.(jpg|jpeg|png|webp)?$,REJEC
 # > 华图在线
 ^https:\/\/yyfapi\.huatu\.com\/common\/ad\/resource\/home data-type=text data="{}" status-code=200
 
-# > 海乐生活
-^https:\/\/yshz-user\.haier-ioc\.com\/slot\/get data-type=text data="{}" status-code=200
-
-^https:\/\/static\.haier-ioc\.com\/images\/2025 data-type=text data="{}" status-code=200
-
-^https:\/\/api\.zhishustar\.com\/\/zhishuPlanetAdPlatform\/api\/pluginVideoADQuery data-type=text data="{}" status-code=200
-
-^https:\/\/api\.zhishustar\.com\/\/zhishuPlanetAdPlatform\/api\/ad\/exposure data-type=text data="{}" status-code=200
-
-
-
-
 
             # >>>>>> J <<<<<< #
 # > 京东
