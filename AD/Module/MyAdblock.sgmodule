@@ -72,6 +72,8 @@ URL-REGEX,^http:\/\/static\.xczim\.com\/[a-f0-9\-]+\.(jpg|jpeg|png|webp)?$,REJEC
 
 ^https:\/\/static\.haier-ioc\.com\/images\/2025 data-type=text data="{}" status-code=200
 
+^https:\/\/api\.zhishustar\.com\/\/zhishuPlanetAdPlatform\/api\/pluginVideoADQuery data-type=text data="{}" status-code=200
+
 
 
 
