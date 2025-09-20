@@ -67,6 +67,11 @@ URL-REGEX,^http:\/\/static\.xczim\.com\/[a-f0-9\-]+\.(jpg|jpeg|png|webp)?$,REJEC
 # > 华图在线
 ^https:\/\/yyfapi\.huatu\.com\/common\/ad\/resource\/home data-type=text data="{}" status-code=200
 
+# > 
+^https:\/\/yshz-user\.haier-ioc\.com\/slot\/get data-type=text data="{}" status-code=200
+
+hostname = yshz-user.haier-ioc.com
+
 
             # >>>>>> J <<<<<< #
 # > 京东
