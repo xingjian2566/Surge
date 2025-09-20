@@ -59,6 +59,10 @@ URL-REGEX,^http:\/\/static\.xczim\.com\/[a-f0-9\-]+\.(jpg|jpeg|png|webp)?$,REJEC
 ^https:\/\/mobile\.caocaokeji\.cn\/cap\/advert-bss\/pullAdvert\/1\.0\.0 data-type=text data=" " status-code=200
 ^https:\/\/cap\.caocaokeji\.cn\/bps\/msgBarAgg\/2\.0 data-type=text data="{}" status-code=200
 
+# > 学习通
+^https:\/\/home-yd\.chaoxing\.com\/home\/moreApp6_xsqy\?cxanalyzetag=hp data-type=text data="{}" status-code=200
+
+
             # >>>>>> H <<<<<< #
 # > 华图在线
 ^https:\/\/yyfapi\.huatu\.com\/common\/ad\/resource\/home data-type=text data="{}" status-code=200
@@ -143,4 +147,4 @@ http-response ^https:\/\/yunbusiness\.ccb\.com\/clp_service|basic_service\/txCtr
 
 
 [MITM]
-hostname = %APPEND% mapi-app.bestpay.com.cn,oss.bestpay.cn,yyfapi.huatu.com,ustatic.ulecdn.com,www.ule.com,mdn.alipayobjects.com,ilce.alicdn.com,zhuli.whxinna.com,home-yd.chaoxing.com,appgoad.189.cn,appgo.189.cn,learn.chaoxing.com,mobile.iqihang.com,image-prod.iqihang.com,guide-acs.m.taobao.com,learn.chaoxing.com,cdn.cnbj1.fds.api.mi-img.com,img.youpin.mi-img.com,mgm.meituan.com,ccimgs.oss.aliyuncs.com,cap.caocaokeji.cn,cdncc-frontend.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com,mobile.caocaokeji.cn,cospimgs-cdn.caocaokeji.cn,cap.caocaokeji.cn,home-yd.chaoxing.com,p.ananas.chaoxing.com,cn-acs.m.cainiao.com, amdc.m.taobao.com,wap.bank.ecitic.com, imcs.citicbank.com,heic.alicdn.com,m5-zhuli.whxinna.com,list-app-m.i4.cn,midc.cdn-static.abchina.com.cn,app-chelaila.52python.cn, app.vkbrother.com, smarthome.aux-home.com,mobile.ccb.com, app3.jegotrip.com.cn, 
+hostname = %APPEND% mapi-app.bestpay.com.cn,oss.bestpay.cn,yyfapi.huatu.com,ustatic.ulecdn.com,www.ule.com,mdn.alipayobjects.com,ilce.alicdn.com,zhuli.whxinna.com,appgoad.189.cn,appgo.189.cn,learn.chaoxing.com,mobile.iqihang.com,image-prod.iqihang.com,guide-acs.m.taobao.com,learn.chaoxing.com,cdn.cnbj1.fds.api.mi-img.com,img.youpin.mi-img.com,mgm.meituan.com,ccimgs.oss.aliyuncs.com,cap.caocaokeji.cn,cdncc-frontend.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com,mobile.caocaokeji.cn,cospimgs-cdn.caocaokeji.cn,cap.caocaokeji.cn,home-yd.chaoxing.com,p.ananas.chaoxing.com,cn-acs.m.cainiao.com, amdc.m.taobao.com,wap.bank.ecitic.com, imcs.citicbank.com,heic.alicdn.com,m5-zhuli.whxinna.com,list-app-m.i4.cn,midc.cdn-static.abchina.com.cn,app-chelaila.52python.cn, app.vkbrother.com, smarthome.aux-home.com,mobile.ccb.com, app3.jegotrip.com.cn, 
