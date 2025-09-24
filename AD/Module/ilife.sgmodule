@@ -24,7 +24,8 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 ^https:\/\/123\.6\.7\.250\/afts\/file\/A\*.*\?bz=apmmodelmanager&tid=afts_traceId - reject
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch|ucdpTemplate|BirdNest@QUICKPAY@.*) - reject
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\/original$ - reject
-
+# 生活费弹窗
+^https?:\/\/mdn\.alipayobjects\.com\/huamei_effzfq\/afts\/img\/WK8BTY7cKnAAAAAAdhAAAAgAeq4RAQFr\/fmt\.webp - reject
 
 [Map Local]
 # 阿里妈妈广告推荐接口（返回空结构）
