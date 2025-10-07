@@ -1,6 +1,6 @@
 #!name=惠生活
 #!desc=移除慧生活798小程序广告
-#!category=111
+#!category=世路如今已惯
 
 [Rule]
 DOMAIN,guide-acs.m.taobao.com,REJECT
