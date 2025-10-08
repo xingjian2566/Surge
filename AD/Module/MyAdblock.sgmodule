@@ -3,6 +3,11 @@
 #!category=世路如今已惯
 
 [Rule]
+# 学信网屏蔽更新
+DOMAIN,push.chsi.com.cn,REJECT
+# 农业银行屏蔽
+DOMAIN,msmp.abchina.com.cn,REJECT
+
 #助理去广告
 URL-REGEX,^https://ilce\.alicdn\.com/minolta/.+\.(png|jpg)\?.*content=.*attrs.*value.*,REJECT
 URL-REGEX,^https://mdn\.alipayobjects\.com/ad_mgr/.*,REJECT
@@ -14,9 +19,6 @@ URL-REGEX,^http:\/\/p\.ananas\.chaoxing\.com\/star3\/origin\/acb31e122e2adc9a7ca
 URL-REGEX,^https:\/\/home-yd\.chaoxing\.com\/apis\/data\/getAdsRecommend,REJECT
 
 URL-REGEX,^https:\/\/api\.pinduoduo\.com\/api\/buffon\/nasus\/recommend\?pdduid=8386324570776$,REJECT
-
-# 农业银行屏蔽
-DOMAIN,msmp.abchina.com.cn,REJECT
 
 #开窗烛
 URL-REGEX,^http:\/\/static\.xczim\.com\/[a-f0-9\-]+\.(jpg|jpeg|png|webp)?$,REJECT
