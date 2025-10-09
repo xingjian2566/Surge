@@ -3,7 +3,7 @@
 #!category=世路如今已惯
 
 [Rule]
-DOMAIN,guide-acs.m.taobao.com,REJECT
+# DOMAIN,guide-acs.m.taobao.com,REJECT
 DOMAIN-SUFFIX,acs4miniapp-inner.m.taobao.com,REJECT
 DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 
