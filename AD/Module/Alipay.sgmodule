@@ -85,4 +85,4 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 ^https:\/\/mdn\.alipayobjects\.com\/huamei_[a-z0-9]+\/afts\/img\/.*\.(webp|avif)(\.ahp\d)?\.webp data-type=tiny-gif status-code=200
 
 [MITM]
-hostname = images.wosaimg.com,mdn.alipayobjects.com, gw.alipayobjects.com, images.wosaimg.com, 
+hostname = images.wosaimg.com,mdn.alipayobjects.com, gw.alipayobjects.com, images.wosaimg.com, gw.alipayobjects.com, mdn.alipayobjects.com, wgo.mmstat.com, acs4miniapp-inner.m.taobao.com, i.ilife798.com, cdn.ynuf.aliapp.org
