@@ -3,57 +3,6 @@
 #!category=世路如今已惯
 
 
-[URL Rewrite]
-# 广告脚本、广告接口、统计上报
-^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ reject
-
-^https?:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/1\/\d+\/1\/mp\/[\d.]+@[^/]*$ reject
-
-^https?:\/\/ilce\.alicdn\.com\/montage\/.+\?[^ - reject
-
-
-^http:\/\/cyqy\.gzjinglang\.com\/apiToJava\.js - reject
-^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get(?:\/1\.0)?$ - reject
-^https:\/\/wgo\.mmstat\.com\/vx\/allin\.mb\.mm-feeds-miniapp$ - reject
-^https://i.ilife798.com/api/v1/fs/dl* - reject
-^https:\/\/mdn\.alipayobjects\.com\/afts\/img\/.+\.(?:avif\.ahp2\.webp|webp|avif)(\?.*bz=BeeLottiePlayer) - reject
-^https:\/\/123\.6\.7\.250\/afts\/file\/A\*.*\?bz=apmmodelmanager&tid=afts_traceId - reject
-^https:\/\/mdn\.alipayobjects\.com\/afts\/(?:img|file)\/.*\?bz=(BeeVideo_Poster|mobileaix_model|cdp_biz|Promotion|GlobalSearch|ucdpTemplate|BirdNest@QUICKPAY@.*) - reject
-^https:\/\/mdn\.alipayobjects\.com\/huamei_[^\/]+\/afts\/img\/.*\/original$ - reject
-# 生活费弹窗
-^https?:\/\/mdn\.alipayobjects\.com\/huamei_effzfq\/afts\/img\/WK8BTY7cKnAAAAAAdhAAAAgAeq4RAQFr\/fmt\.webp - reject
-
-[Map Local]
-# 阿里妈妈广告推荐接口（返回空结构）
-^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get.*$ data-type=text data="{\"data\":{\"result\":[]}}" status-code=200 header="Content-Type: application/json"
-
-# 屏蔽 ccdn 广告资源文件（包括 diff/动画）
-^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/.*$ data-type=tiny-gif status-code=200
-
-[Map Local]
-^https?:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200
-
-# 淘宝广告图、原生广告、全局广告、埋点、下载广告、内容流广告图
-^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/.*\?bz=Common data-type=text data="{}" status-code=200
-
-^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/.*\?bz=apmmodelmanager data-type=tiny-gif status-code=200
-
-^https:\/\/mdn\.alipayobjects\.com\/huamei_[a-z0-9]+\/afts\/img\/.*\.(webp|avif)(\.ahp\d)?\.webp$ data-type=tiny-gif status-code=200
-
-^https:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/.*$ data-type=text data="{}" status-code=200
-
-^https:\/\/mdn\.alipayobjects\.com\/yaoyy_.*\/afts\/file.*$ data-type=text data="{}" status-code=200
-
-^https:\/\/mdn\.alipayobjects\.com\/rms_[a-z0-9]+\/afts\/img\/.*$ data-type=tiny-gif status-code=200
-
-# 支付宝收银台广告图
-^https:\/\/gw\.alipayobjects\.com\/os\/finxbff\/lolita\/.+\/lottie-with-images\.zip data-type=tiny-gif status-code=200
-
-# 支付宝配置干扰内容（空内容兜底）
-^https:\/\/gw\.alipayobjects\.com\/os\/(tscentermng\/.*|mobiletms.*)$ data-type=text data="{}" status-code=200
-
-# 阿里 CDN 广告资源
-^https:\/\/cdn\.ynuf\.aliapp\.org\/u6vr\/g9m6\/1gkepoi$ data-type=text data="{}" status-code=200
 
 [MITM]
 hostname = %APPEND% gw.alipayobjects.com, mdn.alipayobjects.com, wgo.mmstat.com, acs4miniapp-inner.m.taobao.com, i.ilife798.com, cdn.ynuf.aliapp.org
