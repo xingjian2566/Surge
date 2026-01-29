@@ -2,12 +2,14 @@
 #!desc=AliPay小程序去广告
 #!category=世路如今已惯
 
-[URL Rewrite]
-# Alipay CDN 类似广告文件路径
+[Rule]
+# DOMAIN,guide-acs.m.taobao.com,REJECT
+DOMAIN-SUFFIX,acs4miniapp-inner.m.taobao.com,REJECT
+DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 
+[URL Rewrite]
 # 屏蔽 Alipay mobileaix_model 广告
 ^https:\/\/mdn\.alipayobjects\.com\/afts\/file\/.*\?bz=mobileaix_model - reject
-
 # 屏蔽 Alipay 预下载广告/追踪
 ^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/\d+\/\d+\/\d+\/mp\/.*@.*x-predl-task - reject
 
