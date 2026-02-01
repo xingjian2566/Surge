@@ -2,7 +2,7 @@
 #!desc=Github Private
 #!category=一剑光寒十九州
 #!arguments-desc=[参数设置]\nusername: 填入GitHub的用户名\ntoken: 填入GitHub生成的Token\n\n[Token获取方式]\n头像菜单 -> Settings -> Developer settings -> Personal access tokens -> Generate new token -> 在权限列表中找到并勾选 gist 然后提交生成
-#!arguments=username:GITHUB_USERNAME,token:GITHUB_TOKEN,GITHUB_USERNAME1,token1:GITHUB_TOKEN1
+#!arguments=username:GITHUB_USERNAME,token:GITHUB_TOKEN,username1:GITHUB_USERNAME1,token1:GITHUB_TOKEN1
 
 [Header Rewrite]
 http-request ^https?:\/\/(raw|gist)\.githubusercontent\.com\/{{{username}}} header-del Authorization
