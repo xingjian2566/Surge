@@ -7,7 +7,7 @@
 DOMAIN-SUFFIX,acs4miniapp-inner.m.taobao.com,REJECT
 DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 
-https://ahrefs.com/writing-tools/paragraph-rewriter
+
 # 1. 屏蔽预下载与特定追踪
 ^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/\d+\/\d+\/\d+\/mp\/.*@.*x-predl-task reject
 # 2. 屏蔽特定的统计与脚本
