@@ -52,6 +52,12 @@ URL-REGEX,^http:\/\/static\.xczim\.com\/[a-f0-9\-]+\.(jpg|jpeg|png|webp)?$,REJEC
 #Alipay
 ^https:\/\/ads-shopping\.shouqianba\.com\/v3\/ads\/serve data-type=text data="{}" status-code=200
 
+#BabyCare
+^https:\/\/api\.bckid\.com\.cn\/search\/front\/product\/search\/productSearch data-type=text data="{}" status-code=200
+^https:\/\/api\.bckid\.com\.cn\/common\/front\/user\/dialogs\/getDialogs data-type=text data="{}" status-code=200
+^https:\/\/api\.bckid\.com\.cn\/operation\/front\/cms\/productSearchKey\/list data-type=text data="{}" status-code=200
+
+
             # >>>>>> C <<<<<< #
 # > 曹操出行
 ^https:\/\/ccimgs\.oss\.aliyuncs\.com\/\/advert\/picture data-type=text data="{}" status-code=200
