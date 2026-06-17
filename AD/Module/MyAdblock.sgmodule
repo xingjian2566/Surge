@@ -32,7 +32,8 @@ URL-REGEX,^http:\/\/static\.xczim\.com\/[a-f0-9\-]+\.(jpg|jpeg|png|webp)?$,REJEC
 ^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish - reject
 #中信银行
 ^https:\/\/imcs\.citicbank\.com\/cloud\/([a-fA-F0-9]{32})\.(jpg|png) - reject
-^https?:\/\/(autoload\.bank\.ecitic\.com\/imcslego|imcs\.citicbank\.com)\/cloud\/\w+\.png\?width=([1-9]\d{0,2}|1[0-2]\d\d|1300)&height=(1[5-9]\d\d|2[0-6]\d\d) url reject
+^https?:\/\/(autoload\.bank\.ecitic\.com\/imcslego|imcs\.citicbank\.com)\/cloud\/\w+\.png\?width=([1-9]\d{0,2}|1[0-2]\d\d|1300)&height=(1[5-9]\d\d|2[0-6]\d\d) - reject
+
 
 hostname = autoload.bank.ecitic.com, imcs.citicbank.com
 
