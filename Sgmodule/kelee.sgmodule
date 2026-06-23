@@ -11,7 +11,3 @@ http-response https://pluginhub.kelee.one/list.json "loon://import\?plugin=(http
 # 清理缓存
 [Header Rewrite]
 http-request https://pluginhub.kelee.one/list.json header-del if-none-match
-
-
-[MITM]
-hostname = %APPEND% pluginhub.kelee.one

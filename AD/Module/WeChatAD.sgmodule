@@ -25,3 +25,4 @@
 
 [MITM]
 # hostname = %APPEND% api.bckid.com.cn, yshz-user.haier-ioc.com, api.zhishustar.com, static.haier-ioc.com
+hostname = %APPEND%

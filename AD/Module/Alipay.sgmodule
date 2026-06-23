@@ -44,4 +44,4 @@ DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 ^https:\/\/images\.wosaimg\.com\/.*$ data-type=tiny-gif status-code=200
 
 [MITM]
-hostname = %APPEND% acs4miniapp-inner.m.taobao.com, cdn.ynuf.aliapp.org, gw.alipayobjects.com, i.ilife798.com, images.wosaimg.com, wgo.mmstat.com
+hostname = %APPEND%
