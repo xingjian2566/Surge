@@ -182,4 +182,4 @@ ccblife = type=http-response, pattern=^https?:\/\/yunbusiness\.ccb\.com\/(?>basi
 
 
 [MITM]
-hostname = %APPEND% e.dangdang.com, api.dangdang.com, mapi.dangdang.com, yunbusiness.ccb.com, g.alicdn.com, waimai-guide.ele.me, 
+hostname = %APPEND% e.dangdang.com, api.dangdang.com, mapi.dangdang.com, yunbusiness.ccb.com, g.alicdn.com, waimai-guide.ele.me, m.360buyimg.com, api.m.jd.com, bdsp-x.jd.com, dsp-x.jd.com, ms.jr.jd.com, appconf.mail.163.com, support.you.163.com, 
