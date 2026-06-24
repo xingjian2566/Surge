@@ -51,6 +51,8 @@ DOMAIN-SUFFIX,mmstat.com,REJECT
 # 淘宝/菜鸟 FlyAd 获取广告请求 -> 本地映射为空 JSON
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
+^https:\/\/txsh\.gw\.zt-express\.com\/tuxi\.txsh\.mini\.config\.queryConfig data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/txsh\.gw\.zt-express\.com\/tuxi\.txsh\.mini\.config\.queryAlipayMiniConfig data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [MITM]
 hostname = %APPEND%
