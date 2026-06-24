@@ -45,5 +45,12 @@ DOMAIN-SUFFIX,mmstat.com,REJECT
 ^https:\/\/gw\.alipayobjects\.com\/os\/finxbff\/lolita\/.+\/lottie-with-images\.zip data-type=tiny-gif status-code=200
 ^https:\/\/images\.wosaimg\.com\/.*$ data-type=tiny-gif status-code=200
 
+
+# 菜鸟/裹裹批量广告展示请求 -> 本地映射为空 JSON
+^https:\/\/netflow-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.batch\.show data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# 淘宝/菜鸟 FlyAd 获取广告请求 -> 本地映射为空 JSON
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+
 [MITM]
 hostname = %APPEND%
