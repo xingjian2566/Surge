@@ -176,6 +176,10 @@ ccblife = type=http-response, pattern=^https?:\/\/yunbusiness\.ccb\.com\/(?>basi
 ^https?:\/\/wap.bank\.ecitic\.com:6443\/NMBFOServer\/cbframework\.do\?act=CUBEPAGEDATA data-type=text data=" " status-code=200
 ^https?:\/\/imcs\.citicbank\.com\/cloud\/.+(1125.+2436|1242.+2688|750.+1638|563.+1218) data-type=text data="{}" status-code=200
 
+# > 中国农业
+^https?:\/\/enjoy\.cdn-static\.abchina\.com\/yx-engine-web\/file\/download\/(?!7dc2|fe96|cea3|06a8|1b11|d57b|6918|61db|2d58|aa23|) data-type=text data=" " status-code=200
+^https?:\/\/firefly\.abchina\.com\.cn\/firefly-collection\/Collect data-type=text data=" " status-code=200
+
 # >助理生活
 ^https:\/\/m5-zhuli\.whxinna\.com\/ad_manage\/get_ad_placement data-type=text data="{}" status-code=200
 
