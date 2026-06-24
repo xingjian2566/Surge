@@ -172,4 +172,4 @@ http-response ^https:\/\/yunbusiness\.ccb\.com\/clp_service|basic_service\/txCtr
 
 
 [MITM]
-hostname = %APPEND%
+hostname = %APPEND% e.dangdang.com, api.dangdang.com, mapi.dangdang.com, 
