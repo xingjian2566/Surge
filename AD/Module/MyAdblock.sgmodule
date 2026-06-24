@@ -133,7 +133,7 @@ ccblife = type=http-response, pattern=^https?:\/\/yunbusiness\.ccb\.com\/(?>basi
 
 
             # >>>>>> P <<<<<< #
-# > 
+# > 平安口袋银行
 ^https?:\/\/cdn\.sdb\.com\.cn\/widget\/magic-module-sprite\/general-banner data-type=text data=" " status-code=200
 ^https?:\/\/cdn\.sdb\.com\.cn\/widget\/magic-module-sprite\/dialog-normal data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 ^https?:\/\/cdn\.sdb\.com\.cn\/widget\/pb\/pb-plugins-recomend-content data-type=text data="{}" status-code=200 header="Content-Type:application/json"
