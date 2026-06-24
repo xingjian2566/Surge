@@ -8,7 +8,7 @@ DOMAIN-SUFFIX,acs4miniapp-inner.m.taobao.com,REJECT
 DOMAIN-SUFFIX,kzycdn.hnkzy.com,REJECT
 
 DOMAIN,wgo.mmstat.com,REJECT
-
+DOMAIN-SUFFIX,mmstat.com,REJECT
 
 # 1. 屏蔽预下载与特定追踪
 ^https:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/\d+\/\d+\/\d+\/mp\/.*@.*x-predl-task reject
