@@ -1,11 +1,12 @@
-// 仅拦截「充电管家」小程序页内的微信流量主素材，其它微信图片原样放行
+// 充电管家页内流量主素材 + 微信插屏控件
 const url = $request.url;
 const headers = $request.headers || {};
 const referer = headers.Referer || headers.referer || "";
 const fromThisMini = referer.includes("wx38574b445862fab6");
-const isWxVideoAd = /ads_svp_video/.test(url);
+const isWxVideoAd = /ads_svp_video|snssvpdownload/.test(url);
+const isInterstitialChrome = /\/images\/wxapp\/(interstitial_|new_audio)/.test(url);
 
-if (fromThisMini || isWxVideoAd) {
+if (fromThisMini || isWxVideoAd || isInterstitialChrome) {
   $done({ response: { status: 204 } });
 } else {
   $done({});
